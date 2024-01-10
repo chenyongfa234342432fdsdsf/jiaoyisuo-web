@@ -1,0 +1,41 @@
+:local(.scope) {
+  .direct-wrapper {
+    /* @apply */
+  }
+
+  .deal-type-wrapper {
+    .inside,
+    .outside {
+      width: fit-content;
+      height: 22px;
+      padding: 2px 6px;
+      border-radius: 2px;
+      @apply text-xs flex items-center justify-center;
+    }
+
+    .inside {
+      @apply bg-buy_up_color_special_02 text-buy_up_color;
+    }
+
+    .outside {
+      @apply bg-brand_color_special_02 text-brand_color;
+    }
+  }
+
+  .order-id {
+    text-decoration-line: underline;
+    @apply cursor-pointer;
+  }
+
+  .status-wrapper {
+    .order-time-remaining {
+      @apply flex;
+    }
+  }
+
+  .against-wrapper {
+    color: #3F74D6;
+    text-decoration-line: underline;
+    @apply cursor-pointer;
+  }
+}

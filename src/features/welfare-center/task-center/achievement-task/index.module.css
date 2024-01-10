@@ -1,0 +1,17 @@
+:local(.scoped) {
+  @apply mb-8;
+
+  .task-title {
+    font-size: 22px;
+    line-height: 34px;
+    @apply text-text_color_01 font-medium;
+  }
+
+  .arco-empty {
+    @apply pt-[118px] pb-[164px] !important;
+
+    img {
+      @apply w-[104px] h-[92px] !important;
+    }
+  }
+}

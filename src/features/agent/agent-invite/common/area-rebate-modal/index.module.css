@@ -1,0 +1,59 @@
+:local(.rebate-ladder-root) {
+  .rebate-ladder-item {
+    @apply py-4 first:pt-0 flex flex-col justify-center items-start border-b last:border-b-0 border-line_color_02;
+
+    .grade-ratio {
+      @apply flex items-center justify-start;
+
+      .grade-icon {
+        width: 26px;
+        @apply h-5; 
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
+      .active-grade-icon {
+        @apply ml-6 mt-0.5;
+      }
+
+      .ratio-info {
+        @apply ml-4 flex flex-row items-center justify-center text-sm text-text_color_02;
+    
+        .grade {
+          @apply mr-4 last:mr-0;
+        }
+    
+        span {
+          @apply ml-1 text-text_color_01 font-medium;
+        }
+      }
+    }
+
+    .desc {
+      @apply mt-2 text-text_color_03 text-xs;
+
+      line-height: 18px;
+
+      span {
+        @apply px-1 text-brand_color;
+      }
+    }
+  }
+
+  .rebate-rules {
+    span {
+      @apply mr-1 inline-block w-1 h-1 bg-brand_color;
+
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+
+    p {
+      @apply mt-2 flex justify-start items-center text-text_color_03 text-xs;
+
+      line-height: 18px;
+    }
+  }
+}

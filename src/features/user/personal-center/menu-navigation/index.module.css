@@ -1,0 +1,130 @@
+:local(.scoped) {
+  min-width: 240px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-card_bg_color_03 rounded;
+
+  .user-personal-center-menu-wrap {
+    @apply pb-1 pt-8;
+
+    .header {
+      @apply mb-3 relative mx-4;
+
+      .name {
+        label {
+          font-size: 18px;
+          line-height: 18px;
+          @apply text-text_color_01 font-normal mr-2 cursor-pointer;
+        }
+      }
+
+      .uid {
+        label {
+          @apply text-text_color_03 text-xs leading-3 mr-2;
+        }
+      }
+
+      .switch-btn {
+        @apply rounded-full my-4 text-xs bg-card_bg_color_03;
+
+        border-width: 1px;
+        @apply border-line_color_01;
+      }   
+     
+    }
+
+    .tag {
+      padding: 2px 6px;
+      @apply rounded-full;
+
+      svg, img {
+        @apply mr-1 my-auto;
+      }
+
+      label {
+        font-size: 10px;
+        @apply leading-3;
+      }
+    }
+
+    .on {
+      border-width: 0.5px;
+      @apply text-success_color border-success_color;
+    }
+
+    .off {
+      border-width: 0.5px;
+      @apply text-sell_down_color border-sell_down_color;
+    }
+  }
+
+  .kyc-tag {
+    @apply text-xs flex flex-row items-center;
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .cell {
+    .cell-wrap {
+      padding-right: 16px;
+      padding-left: 21px;
+      @apply flex py-4 cursor-pointer items-center;
+
+      .icon {
+        @apply mr-6;
+      }
+
+      .text {
+        @apply flex-1;
+
+        label {
+          @apply text-text_color_01 text-sm leading-4 cursor-pointer font-medium;
+        }
+      }
+
+      .subfix-icon {
+        width: 14px;
+        @apply ml-3;
+
+        svg {
+          @apply hidden;
+        }
+      }
+    }
+
+    &:hover {
+      @apply bg-card_bg_color_02 rounded;
+
+      .subfix-icon {
+        svg {
+          @apply block;
+        }
+      }
+
+    }
+  }
+
+  .login-out {
+    @apply border-t-2 border-line_color_02;
+
+    .cell {
+      @apply px-4;
+    }
+  }
+
+}
+
+.user-menu-icon {
+  @apply ml-2;
+}
+
+
+:local(.is-kyc-modal) {
+  width: 360px;
+
+  .arco-modal-footer {
+    border-top-width: 0;
+  }
+}

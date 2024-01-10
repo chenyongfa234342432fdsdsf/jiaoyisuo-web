@@ -1,0 +1,21 @@
+:local(.scoped) {
+  @apply w-full h-screen flex items-center;
+
+  .grid-container {
+    max-height: 50vh;
+    @apply grid grid-cols-2 m-auto text-text_color_01 gap-2;
+
+    > * {
+      @apply m-auto
+    }
+
+    img {
+      max-height: 50vh;
+    }
+  }
+
+  .social-media-grid {
+    max-width: 180px;
+    @apply grid grid-cols-5 gap-5;
+  }
+}

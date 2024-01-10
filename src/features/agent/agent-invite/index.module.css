@@ -1,0 +1,153 @@
+:local(.scoped) {
+  .footer-wrapper {
+    @apply w-full bg-bg_color m-auto;
+
+    .invite-content-wrap {
+      width: 1200px;
+      @apply px-8 xl:px-0 flex flex-col justify-center items-center m-auto;
+    }
+  }
+
+  .header-wrapper {
+    @apply w-full bg-card_bg_color_01 bg-contain bg-repeat bg-center;
+  
+    .invite-form-wrap {
+      width: 1200px;
+      @apply px-8 xl:px-0 h-full m-auto flex items-center justify-center;
+    }
+  
+    .invite-intro-wrap {
+      @apply flex flex-1 flex-col justify-center py-20;
+  
+      .intro-title {
+        @apply text-5xl font-semibold text-text_color_01;
+  
+        line-height: 72px;
+      }
+  
+      .rules-desc {
+        @apply mt-4 mb-14 text-text_color_01 text-base;
+  
+        .rules-link {
+          @apply px-2 inline-flex items-center justify-center h-6 bg-brand_color_special_02 text-brand_color text-sm;
+  
+          line-height: 22px;
+          border-radius: 42px;
+  
+          svg {
+            @apply mt-0;
+          }
+        }
+      }
+  
+      .intro-image {
+        width: 326px;
+        height: 230px;
+      }
+    }
+  
+    .invite-code-wrap {
+      @apply ml-8 my-8 flex flex-col py-8 shrink-0 bg-card_bg_color_03;
+  
+      width: 560px;
+      border-radius: 20px;
+  
+      .invite-form {
+        @apply flex flex-col px-8;
+  
+        .pyramid-product-rebate {
+          @apply flex flex-col;
+  
+          .rebate-ratio-item {
+            padding-bottom: 10px;
+            @apply flex items-center justify-between last:pb-6;
+          }
+  
+          .label {
+            @apply text-sm text-text_color_02;
+          }
+  
+          .value {
+            @apply text-sm text-text_color_01;
+  
+            .opt {
+              @apply w-5 inline-block;
+            }
+          }
+        }
+  
+        .invite-model {
+          @apply flex flex-1 h-6 justify-between items-center text-base mb-4 last:mb-0;
+  
+          .model-name {
+            @apply w-2/5 font-medium text-text_color_01;
+          }
+  
+          .model-grade {
+            @apply w-3/5 flex justify-end items-center text-text_color_02;
+  
+            .my-grade {
+              svg {
+                height: 18px;
+                @apply w-6;
+              }
+            }
+  
+            .ratio-info {
+              @apply flex flex-row items-center justify-center text-lg text-text_color_02;
+  
+              .grade {
+                @apply mr-2 last:mr-0;
+              }
+  
+              span {
+                @apply ml-1 text-text_color_01 text-base font-medium;
+              }
+            }
+          }
+
+          .msg-icon {
+            @apply text-xs pl-2 mt-0.5;
+          }
+        }
+  
+        .form-item {
+          @apply mt-4 flex;
+        }
+  
+        .qr-code {
+          width: 52px;
+          height: 52px;
+          @apply mr-2 flex items-center justify-center flex-shrink-0 border rounded-lg border-line_color_01; 
+            
+          svg {
+            @apply w-6 h-6;
+          }
+        }
+  
+        .arco-input-group-wrapper {
+          height: 52px;
+          @apply border-line_color_01 rounded-lg;
+        }
+  
+        .left-box-info {
+          @apply text-base text-text_color_02;
+        }
+  
+        .right-box-info {
+          @apply flex justify-between items-center text-text_color_01 text-sm font-medium not-italic truncate;
+  
+          .input-text {
+            max-width: 278px;
+            @apply truncate;
+          }
+        }
+      }
+    }
+  }
+
+
+  &.arco-spin {
+    @apply w-full;
+  }
+}

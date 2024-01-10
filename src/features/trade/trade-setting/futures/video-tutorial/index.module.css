@@ -1,0 +1,41 @@
+:local(.scoped) {
+  .container {
+    @apply mt-8;
+
+    .video {
+      @apply relative;
+
+      .custom-video-button {
+        top: 120px;
+        right: 284px;
+        @apply absolute pointer-events-none;
+
+        svg {
+          width: 82px;
+          height: 82px;
+        }
+      }
+    }
+
+    .btn {
+      @apply flex mt-8 justify-end;
+
+      .arco-btn {
+        width: 140px;
+
+        &:last-child {
+          @apply ml-4;
+        }
+      }
+
+      .arco-btn-disabled {
+        @apply bg-card_bg_color_03 !important;
+        @apply border border-brand_color;
+
+        span {
+          @apply text-brand_color;
+        }
+      }
+    }
+  }
+}

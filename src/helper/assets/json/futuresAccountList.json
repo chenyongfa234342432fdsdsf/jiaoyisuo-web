@@ -1,0 +1,29 @@
+{
+  "code": 200,
+  "isOk": true,
+  "message": "success",
+  "data": {
+    "list": [
+      {
+        "accountType": "temporary",
+        "baseCoin": "USD",
+        "groupAsset": "7970.78504485944199813057",
+        "groupCoinAsset": "7691.06",
+        "groupId": "450254965609734144",
+        "groupName": "定投帳戶",
+        "groupTotalAsset": 7969.9088,
+        "isAutoAdd": "no",
+        "lockCoinAsset": 0,
+        "lockMarginAsset": "0",
+        "marginAvailable": 1000,
+        "marginCoinAvailable": "7582.04",
+        "positionAsset": "106.8356",
+        "positionCoinAsset": 109.01,
+        "totalRevenue": "600",
+        "totalYield": "2.6100737956261770421",
+        "unrealizedProfit": 600,
+        "voucherAmount": 0
+      }
+    ]
+  }
+}

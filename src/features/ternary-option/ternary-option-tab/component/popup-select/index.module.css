@@ -1,0 +1,23 @@
+:local(.popup-select-text) {
+  @apply flex items-center cursor-pointer;
+}
+
+:local(.popup-select) {
+  .arco-select-view-value {
+    @apply pt-0.5 text-xs leading-9;
+  }
+}
+
+:local(.popup-select-option) {
+  .arco-select-option {
+    @apply py-2 text-xs;
+  }
+}
+
+:local(.popup-select-icon) {
+  @apply w-2 h-2;
+
+  svg {
+    @apply w-full h-full;
+  }
+}

@@ -1,0 +1,9 @@
+:local(.scoped) {
+  height: calc(100vh - 60px);
+  @apply relative overflow-hidden;
+
+  .entertainment-area-wrap {
+    width: 390px;
+    @apply mx-auto my-6 h-full;
+  }
+}

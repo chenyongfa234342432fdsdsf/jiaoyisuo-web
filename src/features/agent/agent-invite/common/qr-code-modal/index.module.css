@@ -1,0 +1,68 @@
+:local(.asset-popup-reset) {
+  border-radius: 20px !important;
+  @apply relative;
+
+  .apply-success-close-icon {
+    @apply absolute -bottom-16 left-40;
+  }
+
+  &.arco-modal {
+    border-radius: 20px !important;
+    @apply bg-cover;
+  }
+
+  .arco-modal-content {
+    @apply px-0;
+  }
+
+  .arco-modal-close-icon {
+    right: 28px;
+    @apply top-8;
+      
+    svg {
+      @apply w-5 h-5 text-icon_color;
+    }
+  }
+}
+
+:local(.scoped) {
+  @apply px-8 box-border;
+
+  .title {
+    @apply font-medium text-base text-brand_color;
+
+    line-height: 24px;
+
+    .logo-icon {
+      @apply mr-2;
+    }
+  }
+
+  .content {
+    color: #ffffff;
+    line-height: 22px;
+    @apply w-full mt-3 text-sm  break-all;
+  }
+
+  .qr-wrap {
+    height: 351px;
+    @apply mt-4 rounded-lg w-full p-4 flex flex-col items-center bg-button_text_01;
+
+    canvas {
+      @apply w-full h-full;
+    }
+  }
+
+  .button-wrap {
+    height: 44px;
+    @apply mt-4 mx-4 flex w-full justify-center items-center bg-card_bg_color_04 rounded-lg;
+
+    .label {
+      @apply mr-3 text-button_text_02 text-sm;
+    }
+
+    .value {
+      @apply font-medium text-button_text_02 text-xl;
+    }
+  }
+}

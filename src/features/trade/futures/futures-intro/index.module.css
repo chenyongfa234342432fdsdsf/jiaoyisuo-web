@@ -1,0 +1,30 @@
+:local(.margin-operate-guide-root) {
+  @apply text-xs text-text_color_01;
+
+  .content-title {
+    @apply mb-1 font-semibold flex justify-between items-center;
+
+    .content-title-close {
+      svg {
+        @apply font-semibold;
+      }
+    }
+  }
+}
+
+:local(.introjs-highlight-custom) {
+  @apply bg-transparent !important;
+
+  z-index: 9999999;
+
+  &::after {
+    @apply absolute border-brand_color border-2 border-dashed rounded;
+
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    content: '';
+
+  }
+}

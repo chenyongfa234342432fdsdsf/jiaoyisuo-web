@@ -1,0 +1,582 @@
+:local(.scoped) {
+  .agency-center-wrap {
+    .header {
+      @apply w-full bg-bg_color m-auto bg-no-repeat bg-cover;
+
+      .header-container {
+        width: 1200px;
+        height: 360px;
+        @apply px-8 xl:px-0 flex items-center justify-between m-auto;
+
+        .header-title {
+          @apply text-text_color_01;
+  
+          .text {
+            font-size: 56px;
+            line-height: 72px;
+            @apply mb-8 font-semibold;
+          }
+  
+          .describe {
+            @apply font-normal text-base;
+          }
+        }
+
+        .header-img {
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+    }
+
+    .main {
+      @apply flex justify-center pb-6 bg-bg_color;
+
+      .main-wrap {
+        width: 1200px;
+        @apply px-8 xl:px-0 m-auto;
+
+        .main-nav {
+          @apply flex mt-10 justify-between;
+
+          .tab-wrap {
+            span {
+              @apply text-base font-medium text-text_color_02 cursor-pointer inline-block first:pl-0;
+
+              height: 42px;
+              padding: 0 25px;
+              line-height: 42px;
+            }
+
+            .active {
+              padding: 0 25px !important;
+              @apply text-button_text_02 bg-brand_color rounded-full;
+            }
+          }
+
+          .user-details {
+            line-height: 42px;
+
+            a {
+              @apply text-brand_color mr-1;
+            }
+          }
+        }
+
+        .agent-center-title {
+          @apply flex items-center mt-10 mb-8;
+  
+          & > div {
+            @apply mt-0;
+          }
+  
+          svg {
+            font-size: 34px;
+          }
+
+          .more-icon {
+            margin-top: -3px;
+
+            svg {
+              @apply text-base;
+            }
+          }
+  
+          label {
+            font-size: 22px;
+            line-height: 34px;
+            @apply ml-2 text-text_color_01 font-medium;
+          }
+        }
+
+        .overview-container {
+          .time-tab {
+            @apply mb-2;
+
+            .time-type {
+              font-size: 14px;
+              @apply text-text_color_02 cursor-pointer ml-6 first:ml-0;
+
+              &:last-child {
+                @apply text-text_color_01 cursor-text;
+              }
+            }
+
+            /* .arco-picker-suffix {
+              @apply hidden;
+            } */
+
+            .active {
+              @apply py-1 px-4 bg-bg_sr_color rounded-lg text-text_color_02 font-normal;
+            }
+
+            .arco-picker-input-active input {
+              @apply bg-bg_sr_color;
+            }
+          }
+
+          .time-info {
+            @apply mb-6;
+
+            label {
+              font-size: 12px;
+              @apply text-text_color_03 font-normal;
+
+              &:first-child {
+                @apply mr-1;
+              }
+            }
+          }
+
+          .model-grade {
+            @apply w-full flex items-center text-text_color_02;
+  
+            .my-grade {
+              svg {
+                height: 18px;
+                @apply w-6;
+              }
+            }
+  
+            .ratio-info {
+              @apply flex flex-row items-center justify-center text-base text-text_color_02;
+  
+              span {
+                @apply text-text_color_01 font-medium;
+              }
+            }
+
+            .msg-icon {
+              @apply text-xs pl-1 mt-0.5;
+            }
+          }
+          
+          .income {
+            .income-wrap {
+              @apply p-8 bg-card_bg_color_01 mb-4 relative rounded-lg;
+
+              .overview-header {
+                @apply flex mb-8;
+
+                .item {
+                  @apply flex-1;
+
+                  .text {
+                    @apply mb-1;
+
+                    label {
+                      @apply text-text_color_02 font-normal;
+                    }
+
+                    /* svg {
+                      font-size: 20px;
+                    } */
+                  }
+
+                  .total-wrap {
+                    @apply flex items-end cursor-pointer text-2xl font-semibold;
+
+                    .total-val {
+                      @apply text-4xl leading-9;
+                    }
+
+                    svg {
+                      font-size: 16px;
+                    }
+                  }
+                }
+
+                .left-icon {
+                  .text {
+                    label {
+                      @apply mr-2;
+                    }
+                  }
+                }
+              }
+
+              .footer {
+                @apply flex flex-wrap border-t border-line_color_02;
+
+                .item {
+                  width: 25%;
+                  @apply mt-8;
+
+                  .text {
+                    @apply mb-1;
+
+                    svg {
+                      font-size: 12px;
+                      @apply mr-1;
+                    }
+
+                    label {
+                      font-size: 14px;
+                      @apply text-text_color_02 font-normal;
+                    }
+                  }
+
+                  .num {
+                    @apply text-base font-medium;
+
+                    .info-new {
+                      @apply ml-1 text-xs text-success_color font-medium;
+              
+                      margin-top: 3px;
+                      transform: scale(0.83);
+                    }
+
+                    label {
+                      font-size: 16px;
+                      @apply text-text_color_01 font-medium;
+                    }
+                  }
+                }
+              }
+            }
+
+            .tips {
+              label {
+                font-size: 12px;
+                @apply font-normal text-text_color_03;
+              }
+            }
+          }
+
+          .arco-picker {
+            @apply rounded-lg;
+          }
+        }
+
+        .export {
+          padding: 8px 20px;
+          @apply mt-3 bg-card_bg_color_01 flex justify-between h-10;
+
+          .tips {
+            label {
+              @apply text-xs text-text_color_02 font-normal;
+            }
+          }
+
+          .export-btn {
+            @apply h-6;
+
+            svg {
+              @apply text-base;
+            }
+
+            label {
+              @apply text-xs text-brand_color font-normal ml-2 cursor-pointer;
+            }
+
+            .arco-spin {
+              .arco-spin-icon {
+                & > div {
+                  @apply h-6 w-6 !important;
+
+                  div {
+                    @apply h-6 w-6 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .container-tabs {
+          @apply flex justify-between items-center mb-6;
+
+          .more-search {
+            margin-top: -8px;
+            @apply text-xl;
+          }
+        }
+
+        .arco-table-body {
+          &::-webkit-scrollbar {
+            height: 6px;
+          }
+
+          .arco-table-tr {
+            .arco-table-col-fixed-right {
+              .arco-btn {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .arco-table-td.arco-table-col-fixed-right-first::after, .arco-table-td.arco-table-col-fixed-left-last::after {
+          box-shadow: none !important;
+        }
+
+        .arco-table-header, .arco-table-th {
+          @apply bg-card_bg_color_01 text-text_color_02;
+        }
+
+        .arco-table-th.arco-table-col-fixed-right-first::after {
+          box-shadow: none;
+        }
+
+        .arco-table-th.arco-table-col-fixed-left-last::after {
+          box-shadow: none;
+        }
+
+        .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+          box-shadow: inset -6px 0 8px -6px var(--nc-16);
+        }
+
+        .arco-table-scroll-position-middle .arco-table-col-fixed-left-last::after, .arco-table-scroll-position-right .arco-table-col-fixed-left-last::after {
+          box-shadow: inset 6px 0 8px -6px var(--nc-16);
+        }
+
+
+        .arco-table-sorter {
+          margin-left: 2px;
+          vertical-align: -4px;
+        }
+
+        .arco-table-sorter-icon {
+          height: 7px;
+          line-height: 7px;
+
+          svg {
+            font-size: 8px;
+          }
+            
+          .arco-icon-caret-up, .arco-icon-caret-down {
+            @apply text-icon_color;
+          }
+
+          .arco-icon-caret-up {
+            top: -1px;
+          }
+
+          .arco-icon-caret-down {
+            top: -3px;
+          }
+        }
+
+        .arco-table-sorter-icon-active svg {
+          color: rgb(var(--primary-6))!important;
+        }
+
+        .arco-table-pagination {
+          @apply my-4;
+        }
+
+        .arco-table-hover .arco-table-tr:not(.arco-table-empty-row):hover .arco-table-td.arco-table-col-fixed-left::before, .arco-table-hover .arco-table-tr:not(.arco-table-empty-row):hover .arco-table-td.arco-table-col-fixed-right::before {
+          @apply bg-bg_color_03;
+        }
+      }
+
+      .table-container-bottom {
+        margin-bottom: 108px;
+      }
+
+      .arco-table-th, .arco-table-td {
+        @apply border-b-0;
+      }
+
+      .arco-table-th {
+        font-size: 12px;
+      }
+    }
+
+    .arco-picker {
+      border-color: transparent;
+      @apply bg-bg_sr_color;
+    }
+
+    .arco-table-body, .arco-table-td {
+      @apply bg-bg_color;
+    }
+  }
+  
+  .arco-select-view {
+    @apply bg-bg_sr_color rounded-lg  border-none !important;
+  }
+}
+
+:local(.agent-form) {
+  .arco-space {
+    @apply w-full;
+
+    .arco-space-item {
+      @apply flex-1;
+
+      .arco-picker {
+        @apply w-full;
+      }
+
+      &:last-child {
+        @apply ml-2;
+      }
+    }
+
+    .arco-space-item-split {
+      top: 10px;
+      font-size: 14px;
+      @apply text-text_color_01 font-normal relative;
+    }
+  }
+
+  .arco-picker, .arco-input-inner-wrapper {
+    border-color: transparent;
+    @apply bg-bg_sr_color;
+
+    &:hover {
+      border-color: transparent;
+      @apply bg-bg_sr_color;
+    }
+  }
+
+  .arco-picker {
+    @apply rounded-lg;
+
+    .arco-picker-suffix {
+      @apply hidden;
+    }
+  }
+  
+  .btn {
+    @apply flex mt-2;
+
+    .arco-btn {
+      font-size: 14px;
+      @apply flex-1;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+
+    }
+
+    .arco-btn-secondary {
+      @apply bg-bg_sr_color;
+    }
+  }
+
+  .arco-form-item {
+    @apply mb-6;
+  }
+
+  input, .arco-btn, .arco-form-item-wrapper, .arco-form-item-control-wrapper, .arco-form-item-control, .arco-form-item-control-children {
+    @apply h-10 !important;
+  }
+
+  input {
+    font-size: 14px;
+
+    &::placeholder {
+      @apply text-text_color_04;
+    }
+  }
+
+  .tabs-wrap {
+    gap: 16px!important;
+
+    .tab {
+      .button-item {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important; 
+        @apply bg-card_bg_color_02;
+        @apply rounded font-normal !important;
+      }
+    }
+
+    .active {
+      .button-item {
+        @apply text-brand_color bg-brand_color_special_02 !important;
+      }
+    }
+
+    .custom-time {
+      @apply inline-block;
+    }
+  }
+}
+
+:local(.agent-form-popup) {
+  @apply w-auto;
+  
+  .arco-modal-header {
+    margin-bottom: 6px;
+  }
+
+  .arco-modal-content {
+    .arco-form-label-item {
+      label {
+        @apply text-text_color_01;
+      }
+    }
+  }
+
+  .arco-form-message {
+    @apply text-xs mt-1;
+  }
+}
+
+:local(.invitation-details-table-style) {
+  &.arco-table table {
+    width: auto;
+  }
+
+  .arco-table-body {
+    min-height: 220px;
+  }
+
+  .invite-info {
+    @apply flex;
+
+    .info-avatar {
+      @apply w-6 h-6 flex items-center justify-center bg-brand_color rounded-full text-sm text-text_color_01 font-medium;
+
+      line-height: 16px;
+    }
+  }
+
+  .info-nickname {
+    @apply text-sm text-text_color_01 font-medium ml-2;
+
+    margin-right: 9px;
+    overflow: hidden;
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .model-grade {
+    @apply w-full flex items-center font-medium;
+
+    .my-grade {
+      @apply mt-0 mr-2;
+
+      svg {
+        width: 17px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+:local(.revenue-details-table-style) {
+  .arco-table-body {
+    min-height: 220px;
+  }
+
+  .arco-spin, .arco-spin-children {
+    min-height: 236px;
+  }
+
+  .arco-table-no-data {
+    padding-top: 10px;
+    @apply pb-0;
+  }
+}

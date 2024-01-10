@@ -1,0 +1,113 @@
+:local(.ternary-option-position-root) {
+  @apply h-full py-4 pl-8;
+
+  .arco-table {
+    thead > .arco-table-tr > .arco-table-th,
+    .arco-table-td {
+      @apply text-xs border-none;
+
+      &:first-child {
+        @apply pl-8;
+      }
+
+      &:last-child {
+        @apply pr-8;
+      }
+    }
+
+    .arco-table-td {
+      @apply py-3;
+    }
+
+    tbody > .arco-table-tr {
+      &:first-child {
+        .arco-table-td {
+          @apply pt-4;
+        }
+      }
+    }
+
+    tbody > .arco-table-tr > .arco-table-td {
+      .arco-table-cell-wrap-value {
+        line-height: 18px;
+        @apply flex items-center justify-end;
+
+        .navigation-link:hover {
+          @apply text-brand_color;
+        }
+      }
+
+      &:first-child {
+        .arco-table-cell-wrap-value {
+          @apply justify-start;
+        }
+      }
+    }
+
+    thead > .arco-table-tr > .arco-table-th {
+      @apply font-normal;
+
+      .arco-table-th-item {
+        @apply flex items-center justify-end;
+      }
+
+      &:first-child {
+        .arco-table-th-item {
+          @apply justify-start;
+        }
+      }
+    }
+
+    tbody .arco-table-td {
+      @apply bg-bg_color font-medium;
+    }
+  }
+
+  /* 无数据时隐藏滚动条 */
+  &.no-data {
+    @apply h-full;
+
+    .arco-table-content-inner,
+    .arco-table-body {
+      @apply h-full overflow-hidden;
+
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+    }
+
+    .arco-table, .arco-table table {
+      @apply w-auto h-full;
+    }
+
+    .arco-table-scroll-position-left .arco-table-col-fixed-right-first::after, .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+      box-shadow: none;
+    }
+  }
+
+  .arco-spin, .arco-spin-children, .arco-table-content-scroll, .arco-table-container {
+    @apply h-full;
+  }
+
+  &.auto-width {
+    .arco-table {
+      .arco-table-td {
+        .arco-table-cell {
+          .arco-table-cell-wrap-value {
+            >div {
+              @apply whitespace-nowrap overflow-x-hidden;
+            }
+          }
+        }
+      }
+
+      .arco-table-th {
+        .arco-table-th-item {
+          .arco-table-th-item-title {
+            @apply whitespace-nowrap overflow-x-hidden inline-block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+:local(.scoped) {
+  .personal-body-box {
+    width: 1200px;
+    @apply rounded-lg p-8 bg-card_bg_color_01;
+
+    .personal-individual {
+      padding-bottom: 34px;
+      border-bottom: 1px solid var(--line_color_02);
+      @apply flex items-center;
+
+      & > div:nth-child(1) {
+        font-size: 26px;
+        line-height: 26px;
+        @apply bg-brand_color w-12	h-12 rounded-full not-italic font-medium flex justify-center items-center;
+      }
+
+      & > div:nth-child(2) {
+        font-size: 26px;
+        line-height: 22px;
+        @apply not-italic font-medium  ml-3.5 flex-1;
+      }
+
+      & > div:nth-child(3) {
+        font-size: 14px;
+        line-height: 22px;
+        cursor: pointer;
+        @apply rounded-lg	py-1 text-text_color_01	px-3 font-normal bg-button_hover_01;
+      }
+
+      .personal-tooltip {
+        margin-left: 9px;
+      }
+    }
+
+    .personal-list-box {
+      @apply flex flex-wrap;
+
+      & > div {
+        @apply mt-8 px-2.5;
+      }
+
+      .personal-list-width3 {
+        @apply w-1/3;
+      }
+
+      .personal-list-width12 {
+        @apply w-3/12;
+      }
+
+      .personal-list-name {
+        font-size: 14px;
+        line-height: 22px;
+        @apply not-italic font-normal text-text_color_02;
+      }
+
+      .personal-list-value {
+        @apply font-medium text-base not-italic mt-1;
+      }
+    }
+  }
+}
+
+:local(.personal-list-scoped) {
+  .personal-real-name {
+  }
+
+  .personal-rank-ratio {
+    @apply flex;
+
+    .personal-grade-svg {
+      svg {
+        width: 18px;
+        height: 16px;
+      }
+    }
+
+    & > div:nth-child(2) {
+      @apply ml-2	mr-1;
+    }
+  }
+
+  .personal-uid-icon {
+    margin-left: 5px;
+  }
+}
+
+:local(.table) {
+  .table-text {
+    @apply ml-1;
+  }
+}

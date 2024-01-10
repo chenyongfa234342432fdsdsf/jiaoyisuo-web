@@ -1,0 +1,20 @@
+:local(.plan-delegation-table) {
+  @apply w-28 flex items-center justify-end;
+
+  .operate-right-tag {
+    @apply ml-3 flex text-text_color_01 bg-bg_sr_color rounded text-xs text-center py-1 px-2.5 cursor-pointer;  
+  }
+}
+
+:local(.plan-table-text) {
+  @apply text-xs text-text_color_01;
+
+  .call {
+    @apply text-buy_up_color;
+  }
+
+  .put {
+    @apply text-sell_down_color;
+  }
+}
+

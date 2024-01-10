@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply w-max h-6 px-1 py-px flex items-center bg-card_bg_color_02 rounded text-text_color_03;
+
+  svg {
+    @apply w-3.5 h-3.5 mr-1;
+  }
+
+  .down-time {
+    font-size: 14px;
+    line-height: 22px;
+    @apply font-normal;
+  }
+}

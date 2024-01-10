@@ -1,0 +1,52 @@
+:local(.agent-modal-name) {
+  .update-invitation-code {
+    @apply rounded-lg bg-card_bg_color_03;
+
+    .invitation-code-header {
+      @apply flex justify-between items-center;
+
+      .invitation-code-header-title {
+        @apply text-text_color_01 text-xl not-italic font-medium;
+
+        & > span:nth-child(1) {
+          font-size: 14px;
+          @apply text-sell_down_color font-light;
+        }
+      }
+    }
+
+    .invitation-code-content {
+      .invitation-code {
+        @apply bg-bg_sr_color mt-8 rounded;
+
+        .arco-input-inner-wrapper {
+          @apply border-none;
+
+          .arco-input {
+            font-weight: 400;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+
+    .invitation-code-footer {
+      @apply flex;
+
+      .button {
+        @apply flex-1 mt-8 h-10 rounded-lg;
+
+        font-weight: 500;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+
+      .button:first-child {
+        @apply text-text_color_02 mr-5 bg-bg_sr_color;
+      }
+    }
+  }
+}

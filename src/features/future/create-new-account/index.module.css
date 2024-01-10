@@ -1,0 +1,48 @@
+/* stylelint-disable color-function-notation */
+:local(.newaccount-select-modal-wrapper) {
+  width: 444px;
+  @apply overflow-y-auto relative bg-card_bg_color_03;
+
+  .create-newaccount-container {
+    height: 442px;
+    @apply px-4 pt-4 pb-10 overflow-hidden;
+  }
+  
+  .newaccount-margin-input {
+    @apply relative;
+
+    .newaccount-margin {
+      @apply bg-bg_sr_color w-full h-10 pl-3 rounded-sm mt-2 mb-3 pr-6;
+    }
+  }
+
+  .newaccount-slider {
+    /* width: calc(100% - 10px); */
+
+    /* @apply mx-auto; */
+  }
+
+  .newaccount-name-button {
+    div {
+      width: 48%;
+      @apply h-10 rounded;
+    }
+  }
+  
+  .arco-slider-with-marks {
+    @apply px-1;
+  }
+  
+  .arco-modal-content {
+    @apply p-4 !important;
+  }
+  
+  .arco-modal-header {
+    padding-top: 30px;
+    @apply px-8 !important;
+  }
+  
+  .arco-modal-close-icon {
+    top: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+:local(.vip-center-upgrade) {
+  min-height: 290px;
+
+  .upgrade-layout {
+    min-height: 155px;
+    @apply rounded-lg p-8 bg-card_bg_color_01 flex flex-row space-x-32 justify-around;
+
+   
+  }
+}
+
+:local(.vip-center-upgrade-item) {
+  .arco-progress-line-text {
+    @apply hidden;
+  }
+
+  .arco-progress {
+    @apply flex;
+
+    width: 280px;
+  }
+
+  .arco-progress-line-inner {
+    @apply bg-brand_color;
+  }
+
+  .upgrade-btn {
+    height: 24px;
+    @apply rounded-full text-button_text_02 text-xs font-medium ml-4;
+  }
+}

@@ -1,0 +1,49 @@
+:local(.scoped) {
+  .share-card-content {
+    @apply flex justify-between relative;
+    
+    .line1 {
+      @apply absolute;
+    
+      top: 29px;
+      left: 198px;
+    }
+    
+    .line2 {
+      @apply absolute;
+    
+      top: 29px;
+      right: 198px;
+    }
+    
+    .share-card-item {
+      @apply flex flex-col items-center text-center;
+    
+      width: 210px;
+    
+      .share-card-item-header {
+        @apply flex items-center justify-center relative ;
+    
+        .share-card-item-badge {
+          @apply absolute top-0 -right-8 bg-brand_color_disable text-brand_color text-center px-2 py-0.5 text-xs font-normal not-italic;
+    
+          border-radius: 10px 2px;
+        }
+      }
+    
+      .share-card-item-content {
+        @apply text-text_color_01 mt-4 text-center text-sm font-normal not-italic;
+      }
+
+      .share-card-hy {
+        padding-top: 6px;
+      }
+  
+      .share-card-code {
+        padding-top: 2px;
+      }
+    }
+  }
+
+
+}

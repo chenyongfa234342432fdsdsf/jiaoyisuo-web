@@ -1,0 +1,35 @@
+:local(.color-modal-style) {
+  width: 680px;
+  height: 608px;
+  @apply p-8;
+  
+  .arco-modal-header {
+    @apply p-0 h-auto !important;
+  }
+  
+  .arco-modal-content {
+    @apply p-0 !important;
+  }
+
+  .color-modal-container {
+    /* @apply flex justify-between flex-wrap; */
+
+    .color-modal-item {
+      width: 292px;
+      height: 195px;
+      @apply rounded-lg overflow-hidden;
+    }
+
+    .color-modal-item-select {
+      @apply border border-brand_color;
+    }
+    
+    .arco-radio-group {
+      @apply flex justify-between flex-wrap mt-4;
+
+      .arco-radio {
+        @apply mr-0;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+:local(.manage-modal-delete) {
+  .agent-manage-submit-box {
+    @apply bg-card_bg_color_03 rounded-lg;
+
+    .agent-manage-submit-header {
+      @apply flex justify-between items-center relative;
+
+      .manage-submit-header-title {
+        @apply text-text_color_01 flex-1 text-center not-italic font-medium;
+
+        margin-right: 25px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .manage-submit-header-icon {
+        @apply absolute right-0 top-0;
+      }
+    }
+
+    .agent-manage-submit-content {
+      @apply text-text_color_01 mt-6 text-sm font-normal not-italic;
+    }
+
+    .agent-manage-submit-footer {
+      @apply flex;
+
+      .button {
+        font-size: 14px;
+        line-height: 22px;
+        @apply flex-1 mt-6 h-10 rounded-lg font-medium not-italic border-transparent;
+      }
+
+      .button:first-child {
+        @apply text-text_color_01 mr-5 bg-bg_sr_color border-transparent !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:local(.chart-tooltip) {
+  @apply bg-bg_color_02 w-24 py-2 px-3 rounded text-button_text_01 border-none;
+  
+  > :first-child {
+    @apply text-sm font-medium;
+  }
+  
+  > :last-child {
+    @apply text-xs;
+  }
+}

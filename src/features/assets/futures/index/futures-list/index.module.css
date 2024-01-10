@@ -1,0 +1,85 @@
+:local(.scoped) {
+  .futures-list-root {
+    @apply flex flex-col mb-12;
+
+    .opt-item {
+      @apply inline-block whitespace-nowrap;
+
+      .arco-btn-secondary.arco-btn-disabled {
+        @apply bg-button_hover_01 text-text_color_02 cursor-not-allowed !important;
+      }
+
+      .arco-btn {
+        height: 24px;
+        @apply text-xs px-4 ml-2 !important;
+
+        &.is-disabled {
+          @apply bg-bg_sr_color text-text_color_04 cursor-not-allowed hover:bg-bg_sr_color !important;
+        }
+      }
+
+      .arco-btn-secondary {
+        &:hover {
+          @apply bg-button_hover_01 text-text_color_01;
+        }
+      }
+    }
+  }
+
+  .group-name {
+    @apply flex items-center cursor-pointer text-xs break-words;
+
+    line-height: 22px;
+  
+    .next-icon {
+      @apply mt-0 ml-1;
+  
+      svg {
+        @apply text-sm;
+      }
+    }
+  }
+
+  .account-type {
+    @apply inline-block rounded-sm text-xs whitespace-nowrap flex-1;
+
+    padding: 2px 8px;
+    line-height: 18px;
+  }
+
+  .info-cell-value {
+    @apply font-medium whitespace-nowrap flex-1;
+  }
+
+  .arco-table-body .arco-table-empty-row .arco-table-td {
+    @apply border-none overflow-hidden;
+  }
+
+  .arco-table-col-has-sorter .arco-table-cell-with-sorter {
+    @apply flex items-center justify-end whitespace-nowrap;
+  }
+
+  &.no-data {
+    .arco-table-content-inner,
+    .arco-table-body {
+      @apply h-full overflow-hidden;
+
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+    }
+
+    .arco-table table {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .arco-table-header {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--card_bg_color_01);
+    }
+  }
+}

@@ -1,0 +1,88 @@
+:local(.referral-ratio-modal) {
+  width: 444px;
+
+  .arco-modal-close-icon {
+    top: 33px !important;
+    right: 32px !important;
+  }
+
+  .arco-modal-content {
+    min-height: 300px;
+    @apply px-8 py-5;
+  }
+
+  .arco-modal-footer {
+    border: 0 !important;
+    @apply px-8 pt-2 pb-8;
+
+    .arco-btn {
+      span { @apply text-sm;}
+    }
+  }
+
+  .arco-modal-header {
+    padding-top: 34px;
+    @apply px-8;
+  }
+
+  .warning-msg-wrapper {
+    height: 38px;
+    
+    @apply flex  bg-brand_color_special_02 rounded;
+
+    .msg-wrapper {
+      @apply text-brand_color text-xs flex items-center px-3;
+
+      .text {
+        @apply pl-1;
+      }
+    }
+  }
+
+  .item-ratio-wrapper {
+    @apply pb-4 pt-7;
+
+    .title-name {
+      @apply text-text_color_01;
+
+      .ratio {
+        @apply text-brand_color ml-1;
+      }
+    }
+
+    .arco-slider-with-marks {
+      @apply p-0 m-0;
+
+      padding-left: 5px;
+    }
+  
+    .arco-slider-dots {
+      @apply py-1;
+    }
+
+
+    .arco-slider-marks-text {
+      @apply pt-1;
+
+      .ratio {
+        @apply text-button_text_02 ml-1;
+      }
+
+      &:first-child {
+        left: 18px !important;
+      }
+
+      &:last-child {
+        left: calc( 100% - 18px) !important
+      }
+
+    }
+
+  }
+
+  
+  
+
+
+
+}

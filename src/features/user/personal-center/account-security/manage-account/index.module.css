@@ -1,0 +1,229 @@
+:local(.scoped) {
+  @apply flex-1 h-full flex flex-col;
+
+  .manage-account-wrap {
+    @apply h-full flex flex-col;
+
+    .header {
+      height: 108px;
+      @apply flex flex-col justify-center items-center py-10 bg-card_bg_color_01;
+
+      .header-wrap {
+        width: 1200px;
+        @apply flex;
+
+        .user-account-security-info {
+          @apply flex-1;
+
+          .title {
+            @apply flex items-center;
+  
+            h1 {
+              font-size: 32px;
+              @apply text-text_color_01 leading-10 font-normal;
+            }
+          }
+    
+          .status {
+            .tips {
+              @apply mb-4;
+  
+              label {
+                @apply text-base text-text_color_03;
+              }
+            }
+            
+            .list {
+              @apply flex;
+  
+              .item {
+                @apply mr-4;
+  
+                .item-wrap {
+                  @apply flex;
+    
+                  .text {
+                    @apply mr-2;
+    
+                    label {
+                      @apply text-sm text-text_color_01;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .safety-record {
+          @apply flex items-end;
+
+          a {
+            font-size: 16px;
+          }
+
+          a {
+            line-height: 21px;
+            @apply text-brand_color;
+
+            & > div {
+              @apply -mt-1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .manage-account-body {
+    @apply bg-bg_color pt-8 flex-1;
+
+    .main {
+      width: 1200px;
+      @apply m-auto h-full;
+
+      .personal-center-back {
+        margin-bottom: 69px;
+        @apply flex items-center;
+  
+        svg {
+          width: 14px;
+          height: 14px;
+          @apply mr-1;
+        }
+    
+        label {
+          @apply text-text_color_02 text-base leading-4 font-medium cursor-pointer;
+        }
+
+        .back-divider {
+          height: 10px;
+          @apply w-px mx-2 bg-line_color_02;
+        }
+
+        .back-text {
+          @apply text-base font-medium text-text_color_01;
+        }
+      }
+
+      .manage-account-content {
+        width: 588px;
+        @apply m-auto;
+
+        label {
+          @apply text-xl font-medium;
+        }
+
+        .content-radio {
+          .content-radio-icon {
+            @apply w-4 h-4 pb-px;
+
+            svg {
+              @apply w-full h-full;
+            }
+          }
+
+          .arco-radio {
+            @apply mt-6 flex items-center;
+
+            .arco-radio-text {
+              @apply ml-4 text-sm text-text_color_01;
+            }
+          }
+
+          .content-text-area {
+            @apply mt-4;
+
+            .arco-textarea {
+              height: 185px;
+              @apply p-3 border text-xs rounded-lg border-line_color_01 bg-card_bg_color_03;
+            }
+          }
+        }
+
+        .manage-account-footer {
+          @apply mt-6;
+      
+          .footer-checkobx {
+            @apply text-xs text-text_color_03 items-center;
+      
+            .footer-checkobx-icon {
+              @apply w-3 h-3 mb-1;
+      
+              svg {
+                @apply w-full h-full;
+              }
+            }
+      
+            label {
+              @apply text-xs text-brand_color;
+            }
+          }
+      
+          .footer-button {
+            @apply mt-3 w-full rounded-lg h-10;
+
+            span {
+              @apply text-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:local(.manage-account-popup) {
+  .popup-icon {
+    @apply mb-0;
+
+    .manage-account-icon {
+      @apply w-9 h-9;
+  
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  .slot-content {
+    @apply mb-0;
+
+    .manage-account-popup-content {
+      .content-text {
+        @apply my-6 text-center text-text_color_01 w-full inline-block;
+      }
+
+      .footer-checkobx {
+        @apply mb-2;
+
+        span {
+          @apply text-xs ml-2 text-text_color_02;
+        }
+      }
+    }
+  }
+}
+
+:local(.manage-modal-wrap) {
+  width: 360px;
+  @apply relative;
+
+  .arco-modal-close-icon {
+    @apply hidden;
+  }
+
+  .popup-header-icon {
+    @apply absolute top-0 right-0 w-5 h-5;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  .arco-modal-footer {
+    .arco-btn {
+      @apply text-sm;
+    }
+  }
+}

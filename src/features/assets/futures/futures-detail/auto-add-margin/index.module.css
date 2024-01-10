@@ -1,0 +1,19 @@
+:local(.scoped) {
+  @apply flex flex-row;
+
+  .lable {
+    @apply text-text_color_01;
+  }
+
+  .detail {
+    @apply ml-1 text-brand_color cursor-pointer;
+  }
+
+  .arco-switch-checked {
+    @apply bg-brand_color !important
+  }
+
+  /* .arco-switch {
+    @apply bg-bg_sr_color;
+  } */
+}

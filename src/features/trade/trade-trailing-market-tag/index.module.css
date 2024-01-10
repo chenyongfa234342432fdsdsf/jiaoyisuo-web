@@ -1,0 +1,10 @@
+:local(.scoped) {
+  min-width: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  @apply bg-bg_sr_color ml-2 flex justify-center items-center text-2xl cursor-pointer select-none;
+
+  &.checked {
+    @apply border-brand_color bg-brand_color_special_02 text-brand_color;
+  }
+}

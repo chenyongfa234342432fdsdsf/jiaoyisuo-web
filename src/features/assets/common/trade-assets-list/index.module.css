@@ -1,0 +1,70 @@
+:local(.scoped) {
+  @apply h-full font-medium;
+
+  .arco-spin {
+    @apply block h-full;
+  }
+
+  .arco-spin-children {
+    @apply h-full flex flex-col;
+  }
+
+  .current-header {
+    @apply grid grid-cols-5 bg-card_bg_color_01 text-xs px-4 py-2.5 text-text_color_02;
+  }
+
+  .current-title {
+    @apply text-xs text-text_color_02 px-4;
+  }
+
+  .current-row {
+    @apply grid grid-cols-5 p-4 text-xs;
+  }
+
+  .current-content-wrapper {
+    @apply flex-1 overflow-y-auto;
+  }
+
+  .current-content {
+    @apply pt-4 last:pt-0;
+
+    .current-row {
+      border-bottom: 1px solid var(--line_color_02);
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .current-col {
+    @apply justify-self-end flex flex-col items-end justify-center;
+  }
+
+  .coin-wrap {
+    @apply inline-flex flex-row items-center;
+
+    .icon,
+    img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+    }
+  }
+}
+
+:local(.coin-popup-wrapper) {
+  .arco-popover-content {
+    @apply px-0 border-0;
+
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+  }
+
+  .coin-item {
+    @apply flex text-text_color_01 py-1 px-4;
+  }
+
+  .arco-trigger-arrow-container, .arco-popover-arrow-container {
+    @apply hidden;
+  }
+}

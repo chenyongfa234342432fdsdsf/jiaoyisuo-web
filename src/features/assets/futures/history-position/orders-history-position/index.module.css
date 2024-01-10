@@ -1,0 +1,27 @@
+:local(.futures-history-position) {
+  .close-type {
+    @apply text-xs text-text_color_02 flex items-center;
+  }
+  
+  .liquidation-type {
+    @apply cursor-pointer;
+  
+    span {
+      @apply text-warning_color;
+    }
+  }
+      
+  .type-next-icon {
+    svg {
+      @apply w-2.5 h-2.5;
+    }
+  }
+
+  .search-form-wrap {
+    @apply flex px-8 mt-4;
+
+    .search-form {
+      @apply flex flex-wrap items-center;
+    }
+  }
+}

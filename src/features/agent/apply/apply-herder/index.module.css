@@ -1,0 +1,36 @@
+:local(.scoped) {
+  .herder-bg-img {
+    height: 410px;
+    @apply flex justify-center w-full;
+  }
+
+  .header {
+    width: 1200px;
+    @apply flex justify-between  items-center;
+
+    .header-box {
+      .header-box-primary {
+        @apply text-text_color_01 font-semibold not-italic;
+
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      .header-box-second {
+        @apply text-text_color_01 mt-4 text-base font-normal not-italic;
+      }
+
+      .header-box-button {
+        @apply text-button_text_02 mt-6 h-10;
+
+        width: auto;
+        font-weight: 500;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 18px;
+        background: #F1AE3D;
+        border-radius: 20px
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+:local(.scoped) {
+  .arco-select-view {
+    @apply bg-transparent border-transparent  h-auto leading-normal  !important;
+
+    .arco-select-view-value {
+      @apply text-xs;
+    }
+    
+    .arco-select-arrow-icon {
+      margin-top: -1px;
+      transform: scale(0.65);
+    }
+  }
+
+  .arco-trigger {
+    @apply w-auto !important;
+  }
+}
+
+:local(.base-select-options-wrapper) {
+
+}

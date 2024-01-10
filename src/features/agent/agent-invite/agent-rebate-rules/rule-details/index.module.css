@@ -1,0 +1,23 @@
+:local(.scoped) {
+  @apply w-full flex flex-col items-center bg-bg_color;
+
+  padding-bottom: 120px;
+
+  .footer-text {
+    @apply w-full text-text_color_02 text-sm font-normal not-italic;
+
+    line-height: 22px;
+
+    .black {
+      @apply text-text_color_01 font-bold;
+    }
+
+    .brand {
+      @apply text-brand_color;
+    }
+
+    .footer-h1 {
+      @apply text-text_color_01 text-2xl font-medium not-italic;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+:local(.account-name-wrap) {
+  @apply px-8 pt-8;
+
+  .account-name {
+    @apply bg-bg_sr_color w-full h-10 rounded-sm mt-2 mb-3;
+  }
+
+  .account-name-item {
+    width: 30%;
+    @apply h-6 bg-bg_sr_color flex justify-center items-center text-xs rounded mt-3;
+  }
+  
+  .account-name-item-selected {
+    @apply border border-brand_color bg-brand_color_special_02 text-brand_color;
+  }
+
+  .check-error {
+    .arco-input-inner-wrapper {
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+}

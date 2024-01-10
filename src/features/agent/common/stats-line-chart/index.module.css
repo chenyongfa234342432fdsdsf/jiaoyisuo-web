@@ -1,0 +1,41 @@
+:local(.scoped) {
+  .gains-title {
+    /* margin-left: 20px; */
+    @apply font-medium text-text_color_01 mb-4;
+
+    font-size: 22px;
+    line-height: 34px;
+
+    svg {
+      font-size: 32px;
+      @apply mr-2;
+    }
+  }
+}
+
+:local(.chart-tooltip) {
+  @apply bg-toast_bg_color py-2 px-3 rounded text-button_text_01 border-none;
+
+  > :first-child {
+    @apply text-sm font-medium;
+  }
+
+  > :last-child {
+    @apply text-xs;
+  }
+}
+
+:local(.stats-chart-tabs) {
+  /* height: 36px; */
+  margin-bottom: 30px;
+  @apply flex flex-row mt-4 items-center bg-none;
+
+  > * {
+    padding: 8px 22px;
+    @apply text-sm mr-4 cursor-pointer text-text_color_02 rounded font-medium;
+  }
+
+  :last-child {
+    @apply mr-0;
+  }
+}

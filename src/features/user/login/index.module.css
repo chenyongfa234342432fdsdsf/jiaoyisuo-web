@@ -1,0 +1,103 @@
+:local(.scoped) {
+  width: 912px;
+  @apply mx-auto mt-40;
+
+  .user-login-wrap {
+    @apply flex py-8;
+
+    .qrcode {
+      @apply flex-1;
+    }
+
+    .form {
+      width: 380px;
+      margin-right: 126px;
+
+      /* .arco-form-label-item {
+        @apply hidden;
+      } */
+
+      .register-or-retrieve {
+        @apply flex mt-4 justify-between;
+
+        .register, .retrieve {
+          a, label {
+            @apply text-sm;
+          }
+
+          label {
+            @apply text-brand_color cursor-pointer;
+          }
+
+        }
+
+        .register {
+          @apply mb-4;
+        }
+  
+      }
+    }
+
+    .qrcode {
+      margin-top: 102px;
+      @apply flex flex-col items-center;
+
+      .container {
+        @apply flex justify-center items-center;
+
+        .code {
+          width: 200px;
+          height: 200px;
+          padding: 10px;
+          background-color: #ffffff;
+          box-shadow: 0 2px 4px var(--card_bg_color_02);
+          @apply relative rounded-sm mr-4;
+  
+          .mask {
+            @apply absolute inset-0 bg-bg_color opacity-95;
+          }
+  
+          .refresh {
+            @apply absolute inset-0 flex justify-center items-center;
+  
+            button {
+              font-size: 14px;
+              line-height: 14px;
+              @apply font-normal;
+            }
+          }
+        }
+  
+        .image {
+          width: 190px;
+          height: 200px;
+          @apply relative;
+
+          .animation {
+            top: 28px;
+            right: 35px;
+            width: 36px;
+            height: 36px;
+            @apply absolute;
+
+          }
+        }
+      }
+
+
+      .text {
+        @apply mt-4;
+
+        label {
+          font-size: 14px;
+          line-height: 14px;
+          @apply text-text_color_03 font-normal;
+
+          span {
+            @apply text-brand_color;
+          }
+        }
+      }
+    }
+  }
+}

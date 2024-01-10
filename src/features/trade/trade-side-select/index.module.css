@@ -1,0 +1,75 @@
+:local(.trade-side-select-wrapper) {
+  @apply flex items-center rounded  text-text_color_02 text-sm bg-bg_color gap-8;
+
+  .buy,
+  .sell {
+    @apply flex-1 text-center cursor-pointer py-1.5 relative bg-bg_sr_color;
+
+    &.selected {
+      @apply text-button_text_01;
+    }
+
+    &::after {
+      content: "";
+      @apply absolute left-0 top-0 right-0 bottom-0;
+    }
+
+    &::before {
+      @apply absolute top-0 rounded-full h-full;
+
+      content: "";
+    }
+  }
+
+  .buy {
+    padding-left: 18px;
+
+    &::before {
+      @apply rounded bg-bg_sr_color;
+
+      right: -9px;
+      width: 46px !important;
+      transform: skewX(-20deg);
+    }
+
+    &::after {
+      @apply rounded-lg -z-1;
+    }
+
+    &.selected {
+      @apply bg-buy_up_color relative rounded-l;
+
+      &::after,
+      &::before {
+        @apply bg-buy_up_color;
+      }
+    }
+  }
+
+  .sell {
+    padding-right: 18px;
+
+    &::after {
+      @apply rounded bg-bg_sr_color;
+
+      left: -13px;
+      width: 46px !important;
+      transform: skewX(-20deg);
+    }
+
+    &::before {
+      @apply -z-1;
+
+      right: -9px;
+    }
+
+    &.selected {
+      @apply bg-sell_down_color relative rounded-r;
+
+      &::after,
+      &::before {
+        @apply bg-sell_down_color;
+      }
+    }
+  }
+}

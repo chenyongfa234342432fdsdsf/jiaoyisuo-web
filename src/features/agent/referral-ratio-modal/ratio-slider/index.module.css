@@ -1,0 +1,30 @@
+:local(.scoped) {
+  @apply w-full mt-2;
+
+  .arco-slider-marks-text {
+    @apply whitespace-nowrap text-xs;
+  }
+
+  .arco-slider-dot {
+    @apply !bg-button_hover_01;
+  }
+
+  .arco-slider-dot-active {
+    @apply !bg-brand_color;
+  }
+
+  .arco-slider-button, .arco-slider-button::after {
+    width: 14px !important;
+    height: 14px !important;
+    transform: translateY(-1px)
+  }
+
+  .arco-slider-wrapper {
+    height: 14px;
+
+    .arco-slider-bar {
+      height: 2px;
+    }
+  
+  }
+}

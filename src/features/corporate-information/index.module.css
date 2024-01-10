@@ -1,0 +1,43 @@
+:local(.scoped) {
+  @apply flex-1 bg-bg_color;
+
+  .corporate-information-wrap {
+    .header {
+      height: 108px;
+      @apply w-full flex justify-center items-center bg-card_bg_color_01;
+
+      label {
+        font-size: 40px;
+        @apply text-text_color_01 font-medium;
+      }
+    }
+
+    .container {
+      width: 1200px;
+      margin-top: 120px;
+      @apply mx-auto;
+
+      .name, .address {
+        .title {
+          @apply mb-6;
+
+          label {
+            font-size: 32px;
+            @apply text-text_color_01 font-medium;
+          }
+        }
+  
+        .text {
+          label {
+            font-size: 20px;
+            @apply text-text_color_01 font-normal;
+          }
+        }
+      }
+  
+      .name {
+        @apply mb-16;
+      }
+    }
+  }
+}

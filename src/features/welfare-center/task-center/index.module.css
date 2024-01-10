@@ -1,0 +1,43 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply mx-auto flex;
+
+  .task-content {
+    width: 250px;
+    height: 222px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    @apply bg-card_bg_color_03 mr-10 py-6 sticky top-20;
+
+    .task-content-title {
+      font-size: 18px;
+      line-height: 26px;
+      @apply text-text_color_01 font-medium px-4 flex items-center;
+
+      svg {
+        @apply mr-2;
+      }
+
+      &:last-child {
+        @apply cursor-pointer mt-6;
+      }
+    }
+
+    .task-content-subtitle {
+      @apply h-11 px-6 py-2.5 mt-1 text-base text-text_color_01 cursor-pointer;
+
+      &:hover {
+        @apply bg-bg_color_03;
+      }
+    }
+
+    .task-content-subtitle-active {
+      @apply text-base text-brand_color;
+    }
+  }
+
+  .task-list {
+    width: 910px;
+    min-height: 250px;
+  }
+}

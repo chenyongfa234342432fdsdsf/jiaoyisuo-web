@@ -1,0 +1,26 @@
+:local(.page-scoped) {
+  @apply flex;
+}
+
+:local(.scoped) {
+  @apply flex-1;
+
+  .his-body-box {
+    width: 1200px;
+  }
+
+  .his-herder {
+    height: 108px;
+    font-size: 32px;
+    line-height: 48px;
+    @apply flex justify-center bg-card_bg_color_01 items-center not-italic font-medium;
+  }
+
+  .his-personal {
+    @apply bg-bg_color h-full pt-8 pb-10;
+
+    .his-personal-box {
+      @apply flex justify-center
+    }
+  }
+}

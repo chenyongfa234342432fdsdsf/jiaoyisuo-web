@@ -1,0 +1,151 @@
+:local(.ta-modal-activity) {
+  .arco-modal-content {
+    @apply px-8;
+  }
+
+  .arco-modal-close-icon {
+    top: 14px !important;
+    right: 20px !important;
+  }
+
+  button {
+    @apply text-sm;
+  }
+
+  min-width: 450px;
+
+  .verify-icon {
+    @apply text-xs;
+  }
+
+  .avatar-icon {
+    font-size: 40px;
+    @apply mt-0;
+  }
+
+  .arco-modal-title {
+    @apply pt-8;
+  }
+
+  .arco-modal-content {
+    @apply pt-8;
+  }
+
+  .arco-modal-footer {
+    @apply pb-8 pt-2;
+  }
+
+  .arco-modal-close-icon {
+    top: 32px !important;
+  }
+
+  .contract-edit {
+    font-size: 16px;
+  }
+
+  .ta-modal-header {
+    @apply rounded  p-4 bg-card_bg_color_01 flex flex-row gap-x-4;
+
+    > :first-child {
+      @apply mb-auto;
+    }
+
+    .nick-name {
+      font-size: 16px;
+      @apply font-medium text-text_color_01;
+    }
+
+    .uid {
+      @apply flex items-center;
+
+      .uid-label {
+        @apply text-xs text-text_color_02;
+      }
+    }
+
+    > * {
+      @apply mb-2;
+    }
+
+    :last-child {
+      @apply mb-0;
+    }
+  }
+
+  .arco-modal-footer {
+    @apply border-none;
+  }
+
+  .ta-activities {
+    > * {
+      @apply flex flex-row py-2 justify-between;
+    }
+
+    .label {
+      @apply text-text_color_02;
+    }
+
+    .value {
+      @apply text-text_color_01;
+    }
+  }
+
+  .ta-rebate-info {
+    border-bottom: 0.5px solid var(--line_color_02);
+    @apply mb-2;
+
+    > :last-child {
+      @apply mb-2;
+    }
+  }
+
+  .uid {
+    label {
+      @apply text-text_color_03 text-xs leading-3 mr-2;
+    }
+  }
+}
+
+:local(.ta-datetime-tab) {
+  @apply whitespace-nowrap flex flex-row items-center mt-4 gap-x-6;
+
+  span {
+    font-size: 14px;
+    @apply text-text_color_02 cursor-pointer mr-2;
+
+    &:last-child {
+      @apply text-text_color_01 cursor-text;
+    }
+  }
+
+  .checked {
+    @apply !text-brand_color font-normal;
+  }
+
+  .arco-picker, .arco-input-inner-wrapper {
+    border-color: transparent;
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-input input {
+    @apply text-xs;
+  }
+
+  .arco-picker-input-active input, .arco-picker-focused .arco-picker-input-active input {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker:hover {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-suffix-icon {
+    @apply hidden;
+  }
+
+  .tab-scrollbar {
+    .bar-wrapper {
+      max-width: 450px;
+    }
+  }
+}

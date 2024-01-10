@@ -1,0 +1,51 @@
+:local(.del-modal) {
+  width: 360px;
+  @apply p-8;
+
+  .arco-modal-footer {
+    border-top: 1px solid transparent;
+    @apply p-0;
+
+    .arco-btn {
+      span {
+        @apply text-sm;
+      }
+    }
+  }
+
+  .arco-modal-content {
+    @apply p-0 w-full;
+
+    .del-modal-content {
+      @apply relative w-full;
+
+      .del-modal-icon {
+        @apply absolute top-0 right-0 w-5 h-5;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+
+      .del-modal-text {
+        @apply my-6 text-sm;
+      }
+
+      .del-modal-tis-icon {
+        @apply w-8 h-8 m-auto;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+  }
+
+  .arco-modal-close-icon {
+    @apply hidden;
+  }
+
+  .arco-modal-header {
+    @apply hidden;
+  }
+}

@@ -1,0 +1,37 @@
+:local(.order-table-wrapper) {
+
+}
+
+:local(.trade-order-wrapper) {
+  @apply h-full flex flex-col overflow-y-hidden relative;
+
+  .arco-table-container {
+    border-top: none;
+  }
+
+  .tabs-wrapper {
+    @apply border-b border-solid border-line_color_02 sticky top-0 bg-bg_color z-30;
+  }
+
+  .content-wrapper {
+    @apply flex-1 h-0;
+  }
+
+  .tabs-component {
+    @apply whitespace-nowrap;
+
+    .tab-fill {
+      flex: unset;
+    }
+
+    .scrollable-tab {
+      @apply w-0 flex-1 mr-6;
+
+      .icon-circle {
+        @apply w-6 h-6 bg-bg_color rounded-none;
+
+        filter: none;
+      }
+    }
+  }
+}

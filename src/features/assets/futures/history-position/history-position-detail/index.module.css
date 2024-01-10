@@ -1,0 +1,74 @@
+:local(.scoped) {
+  @apply w-full h-full flex flex-col;
+
+  .position-modal-header-title {
+    line-height: 30px;
+    @apply flex items-center justify-between text-xl text-text_color_01 font-medium px-8;
+  }
+
+  .position-wrap {
+    @apply px-8 py-4 flex items-center;
+
+    .position-info {
+      @apply flex items-center;
+
+      .info-name {
+        @apply text-sm text-text_color_01 font-medium mr-2;
+      }
+    }
+
+    .position-type {
+      @apply flex items-center justify-center h-5 text-xs text-warning_color bg-warning_color_special_02 px-1 rounded-sm;
+    }
+  }
+
+  .details-wrap {
+    @apply flex flex-col border-t border-line_color_02 px-8;
+
+    .details-header {
+      @apply pt-4 flex items-center justify-between;
+
+      .header-title {
+        @apply text-base text-text_color_01 font-medium;
+      }
+
+      .header-date {
+        @apply text-sm text-text_color_03;
+      }
+    }
+
+    .details-list {
+      @apply flex flex-col py-4;
+
+      .list-cell {
+        @apply flex items-center justify-between mb-4 last:mb-0;
+
+        .label {
+          @apply text-sm text-text_color_02;
+        }
+
+        .value {
+          @apply text-sm text-text_color_01;
+        }
+      }
+    }
+
+    .hint-wrap {
+      @apply flex py-4;
+
+      .hint-icon {
+        @apply mr-1 w-1.5 h-1.5;
+
+        margin-top: 5px;
+
+        svg {
+          @apply w-1.5 h-1.5;
+        }
+      }
+
+      .hint-text {
+        @apply text-xs text-text_color_03 break-all flex-1;
+      }
+    }
+  }
+}

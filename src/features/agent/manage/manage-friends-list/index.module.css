@@ -1,0 +1,44 @@
+:local(.agent-manage-modal) {
+  .friend-modal {
+    .friend-modal-header {
+      @apply flex justify-between items-center mx-3;
+
+      .friend-modal-header-title {
+        @apply text-text_color_01 text-xl not-italic font-medium;
+      }
+    }
+
+    .friend-modal-content {
+      @apply mt-8 mx-3;
+
+      .friend-list-item-header {
+        @apply flex justify-between items-center text-text_color_02 text-sm font-normal not-italic;
+      }
+
+      .friend-list-item-content {
+        @apply flex justify-between items-center text-text_color_01 mt-4 text-sm font-normal not-italic;
+      }
+
+      .empty {
+        & svg {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      .arco-empty .arco-empty-wrapper img {
+        @apply h-full !important;
+      }
+    }
+
+    .friend-modal-know {
+      @apply flex justify-center;
+
+      .button {
+        width: 380px;
+        height: 40px;
+        @apply text-center mt-8;
+      }
+    }
+  }
+}

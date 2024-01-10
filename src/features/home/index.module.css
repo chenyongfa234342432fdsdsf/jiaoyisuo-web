@@ -1,0 +1,88 @@
+:local(.scoped) {
+  .merge-mode-bar {
+    @apply flex justify-center items-center bg-card_bg_color_02;
+
+    height: 48px;
+    margin-bottom: 80px;
+
+    > * {
+      width: 1200px;
+      @apply m-0;
+    }
+  }
+  @apply w-full bg-bg_color;
+
+
+
+  > :first-child {
+    @apply my-0;
+  }
+
+  > :nth-child(2) {
+    @apply mt-0;
+  }
+
+  > :last-child {
+    @apply my-0;
+  }
+
+  .hero-section {
+    @apply relative;
+
+    > :first-child {
+      @apply absolute left-1/2 -translate-x-1/2 top-0 bottom-0;
+    }
+
+    > :last-child {
+      @apply relative;
+    }
+
+    > :first-child {
+      @apply overflow-hidden min-h-full min-w-full;
+
+      /* screen width minus scrollbar width to get actual width */
+      width: calc(100vw - var(--scroll-bar-width));
+
+      img {
+        @apply w-full min-h-full;
+      }
+    }
+  }
+
+  .hero-section::before {
+    @apply absolute top-0 w-screen bottom-0 left-1/2 -translate-x-1/2;
+  }
+
+  .section {
+    @apply relative py-24 mt-4;
+
+    > .arco-typography {
+      @apply mb-14;
+    }
+
+    > * {
+      @apply relative;
+    }
+  }
+
+  .section::before {
+    /* screen width minus scrollbar width to get actual width */
+    width: calc(100vw - var(--scroll-bar-width));
+    content: '';
+    @apply bg-card_bg_color_01 min-w-full absolute top-0 bottom-0 left-1/2 -translate-x-1/2;
+  }
+
+  .hot-currency-section {
+    @apply mb-4;
+  }
+
+  .arco-carousel-indicator-position-outer {
+    @apply mb-[50px];
+  }
+
+  .home-content-layout {
+    width: 1200px;
+    margin-top: 44px;
+    @apply mx-auto;
+  }
+}

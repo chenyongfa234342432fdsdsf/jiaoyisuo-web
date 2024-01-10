@@ -1,0 +1,65 @@
+:local(.scoped) {
+  margin-top: 80px;
+
+
+  .table-tab {
+    @apply justify-center gap-12;
+
+    .tab {
+      font-size: 24px;
+      @apply font-medium;
+    }
+
+    .active .item {
+      font-size: 32px;
+      @apply !text-text_color_01;
+    }
+  }
+
+  .redirect-btn {
+    @apply text-brand_color justify-center;
+
+    >* {
+      @apply text-brand_color;
+    }
+  }
+
+  .arco-table {
+    min-height: 380px;
+    margin-top: 50px;
+
+    thead {
+      .arco-table-th {
+        @apply bg-transparent text-sm font-medium text-text_color_02 border-none;
+
+        .arco-table-th-item {
+          padding-bottom: 25px;
+        }
+
+      }
+    }
+
+    tbody {
+      .arco-table-td {
+
+        @apply bg-transparent;
+        @apply border-none py-3;
+
+        .quote-symbol-name {
+          @apply !text-xs mt-auto mb-0.5;
+        }
+
+        .full-name {
+          @apply text-xs text-text_color_02;
+        }
+      }
+
+      .arco-table-tr {
+        :nth-child(2), :nth-child(3) {
+          span { @apply text-base font-medium;}
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,72 @@
+:local(.scoped) {
+  .prompt-icon {
+    margin-right: 6px;
+    font-size: 6px;
+  }
+
+  >:nth-child(n+4) {
+    @apply mt-4;
+  }
+
+  .banner-image {
+    top: 50px;
+    height: 360px;
+    @apply absolute left-0 right-0 bottom-0;
+
+    img {
+      @apply w-full h-full;
+    }
+  }
+
+  .tier-header {
+    height: 360px;
+    @apply flex flex-row items-center relative justify-between;
+
+    .header-title {
+      font-size: 56px;
+      @apply font-semibold mb-8;
+    }
+  }
+
+  .vip-tier-tab {
+    border-bottom-width: 0.5px;
+    @apply border-line_color_02;
+
+    .item::after {
+      @apply !-translate-x-full;
+    }
+  }
+}
+
+:local(.vip-grid) {
+  max-height: 221px;
+  @apply overflow-y-auto;
+
+  .vip-grid-item {
+    border-width: 0.5px;
+    @apply py-2 text-center my-auto cursor-pointer border-line_color_01;
+  }
+
+
+  .vip-grid-item-active {
+    border-width: 0.5px !important;
+    @apply border-brand_color bg-brand_color_special_02 text-brand_color;
+  }
+
+  .vip-grid-layout {
+    @apply grid grid-cols-9;
+
+    > * {
+      border-right-width: 0;
+    }
+
+    >:nth-child(9n) {
+      border-right-width: 0.5px;
+    }
+
+    >:last-child {
+      border-right-width: 0.5px;
+    }
+  }
+}
+

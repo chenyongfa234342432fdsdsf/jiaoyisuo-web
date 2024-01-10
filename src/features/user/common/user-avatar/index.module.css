@@ -1,0 +1,36 @@
+:local(.scoped) {
+  border-width: 0.5px;
+  @apply rounded-full relative;
+
+  .user-avatar {
+    @apply rounded-full; 
+
+    img {
+      @apply rounded-full;
+    }
+  }
+
+  .user-avatar-frame {
+    @apply absolute;
+
+    transform: scale(140%);
+  }
+
+  .avatar-status-tag {
+    border-width: 0.5px;
+    @apply flex w-7 h-7 bg-bg_color rounded-full absolute bottom-0 right-0;
+
+    .icon-wrap {
+      @apply m-auto;
+    }
+  }
+
+  .no-avatar-icon {
+    @apply mt-auto mx-auto w-full h-full;
+
+    svg {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}

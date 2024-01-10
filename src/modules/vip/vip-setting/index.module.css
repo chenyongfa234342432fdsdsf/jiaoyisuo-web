@@ -1,0 +1,14 @@
+:local(.scoped) {
+  @apply bg-bg_color;
+
+  .header-title, >:last-child {
+    width: 1200px;
+
+    @apply m-auto;
+  }
+
+  .header-title {
+    font-size: 32px;
+    @apply font-medium;
+  }
+}

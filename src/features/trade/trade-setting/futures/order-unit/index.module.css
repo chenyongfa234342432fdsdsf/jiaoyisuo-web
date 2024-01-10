@@ -1,0 +1,7 @@
+:local(.scoped) {
+  .arco-dropdown-menu-item {
+    &:hover {
+      @apply text-brand_color;
+    }
+  }
+}

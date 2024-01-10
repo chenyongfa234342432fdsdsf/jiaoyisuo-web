@@ -1,0 +1,234 @@
+:local(.scoped) {
+  width: 444px;
+
+  /* @apply p-8; */
+  
+  .arco-modal-content {
+    @apply p-8 !important;
+  }
+  
+  .modal-header {
+    @apply relative mb-4;
+
+    .modal-header-icon {
+      @apply absolute right-0 top-0;
+
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  }
+  
+  .modal-container-item {
+    @apply text-text_color_01 font-normal text-sm;
+  }
+  
+  .modal-footer {
+    @apply flex justify-between mt-6;
+
+    .modal-footer-cancel {
+      width: 180px;
+      @apply h-10 rounded-lg bg-bg_sr_color flex justify-center items-center text-text_color_02 font-medium text-xs cursor-pointer;
+    }
+    
+    .modal-footer-primary {
+      width: 180px;
+      @apply h-10 rounded-lg bg-brand_color flex justify-center items-center text-button_text_02 font-medium text-xs cursor-pointer;
+    }
+  }
+
+  .card-coupon-item-container {
+    width: calc(100% - 12px);
+    height: 143px;
+    @apply relative ml-3 border-line_color_02 border inline-block mb-6 rounded-tr rounded-br;
+    
+    .coupon-status-tip-image {
+      @apply absolute right-0 top-0;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .coupon-status-tip-text {
+        top: 2px;
+        right: -20px;
+        width: 50px;
+        transform: rotate(45deg) scale(0.8);
+        transform-origin: left top;
+        @apply absolute text-text_color_04 text-xs font-medium text-center;
+      }
+    }
+    
+    .card-coupon-item-left-image {
+      img {
+        top: -1px;
+        left: -13px;
+        height: 143px;
+        @apply absolute w-3;
+      }
+    }
+
+    .card-coupon-item-right-top-image {
+      top: 14px;
+      @apply absolute right-4;
+
+      .card-coupon-item-left-text {
+        top: 3px;
+        right: -18px;
+        width: 50px;
+        transform: rotate(44deg) scale(0.8);
+        transform-origin: left top;
+        @apply absolute text-buy_up_color text-xs font-medium text-center;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+   
+      }
+    }
+
+    
+    .card-coupon-item-bottom {
+      height: 42px;
+      @apply flex items-center justify-between border-t border-line_color_02;
+      
+      div:first-child {
+        @apply pl-4 text-text_color_03 text-xs;
+      }
+      
+      div:last-child {
+        padding: 1px;
+        border-radius: 23px;
+
+        @apply mr-4 text-text_color_02 px-2 text-xs bg-bg_sr_color;
+      }
+      
+      .card-coupon-item-bottom-right {
+        @apply text-text_color_02 !important;
+      }
+    }
+  }
+  
+  .card-coupon-item {
+    @apply flex justify-between;
+  
+    .card-coupon-item-button {
+      z-index: 2;
+      height: 26px;
+      margin-top: 27px;
+      border-radius: 23px;
+      @apply flex justify-center items-center px-3.5 bg-brand_color mr-4 text-button_text_02 text-xs cursor-pointer;
+    }
+    
+    .card-coupon-item-left {
+      margin-top: 18px;
+      @apply flex ml-4;
+      
+      .card-coupon-item-icon {
+        width: 44px;
+        height: 44px;
+        @apply bg-brand_color_special_02 rounded-full flex justify-center items-center;
+        
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+      }
+  
+      .card-coupon-item-left-detail {
+        @apply ml-3;
+  
+        .card-coupon-num {
+          @apply text-xl text-text_color_01 font-semibold;
+        }
+        
+        .card-coupon-condition {
+          @apply text-text_color_03 text-xs;
+        }
+        
+        .card-coupon-money {
+          @apply text-text_color_01 text-xs mt-0.5;
+          
+          span {
+            @apply text-text_color_03 text-xs;
+          }
+        }
+      }
+    }
+    
+    .card-coupon-item-left-not {
+      .card-coupon-item-icon {
+        @apply bg-card_bg_color_02;
+      }
+  
+      .card-coupon-item-left-detail {
+        .card-coupon-num {
+          @apply text-text_color_04;
+        }
+  
+        .card-coupon-condition {
+          @apply text-text_color_04;
+        }
+        
+        .card-coupon-money {
+          @apply text-text_color_04;
+          
+          span {
+            @apply text-text_color_04;
+          }
+        }
+      }
+    }
+  }
+  
+  .coupon-trade-detail {
+    @apply py-4 border-t border-b border-line_color_02;
+
+    .coupon-trade-detail-item {
+      @apply flex justify-between text-sm mb-4;
+
+      .coupon-trade-detail-label {
+        @apply text-text_color_02;
+      }
+    }
+
+    .coupon-trade-detail-item:last-child {
+      @apply mb-0;
+    }
+  }
+  
+  .coupon-trade-container {
+    @apply flex justify-between items-center;
+
+    .coupon-trade-item {
+      @apply text-sm w-1/3;
+    }
+    
+    .coupon-trade-item:nth-child(2) {
+      @apply text-center;
+    }
+    
+    .coupon-trade-item:last-child {
+      @apply text-right;
+    }
+  }
+
+
+}
+
+
+
+:local(.wrapper) {
+  .arco-empty-wrapper {
+    .arco-empty-image {
+      @apply flex justify-center items-center;
+
+      img {
+        width: 104px;
+        height: 92px;
+        @apply cursor-auto;
+      }
+    }
+  }}

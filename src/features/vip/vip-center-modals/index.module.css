@@ -1,0 +1,42 @@
+:local(.vip-center-protect-modal) {
+  max-width: 400px;
+  @apply text-sm;
+
+  .arco-modal-title {
+    @apply text-center text-base;
+  }
+
+  .arco-modal-footer {
+    border-top-width: 0;
+  }
+}
+
+:local(.vip-center-redirection-modal) {
+  max-width: 420px;
+  @apply text-sm rounded-lg;
+
+  .arco-modal-content {
+    @apply space-y-4;
+  }
+
+  .arco-modal-footer {
+    padding-top: 0;
+    padding-bottom: 32px;
+    border-top-width: 0;;
+  }
+}
+
+:local(.vip-center-redirection-cell) {
+  border-width: 0.5px;
+  @apply flex flex-row p-4 justify-between rounded-lg border-line_color_02;
+
+  >:last-child {
+    @apply mb-auto;
+  }
+
+  .arrow-icon {
+    width: 27px;
+    height: 14px;
+    @apply bg-brand_color rounded-full inline-flex justify-center items-center ml-1;
+  }
+}

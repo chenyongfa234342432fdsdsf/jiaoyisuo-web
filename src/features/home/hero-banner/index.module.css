@@ -1,0 +1,142 @@
+:local(.hero-banner) {
+  @apply relative;
+
+  .arco-carousel-indicator-wrapper-bottom {
+    @apply bg-none;
+  }
+
+  .third-party {
+    .arco-btn {
+      @apply border-line_color_01;
+    }
+
+  }
+
+  .arco-divider-text {
+    @apply !text-text_color_02;
+  }
+
+
+  height: 482px;
+
+  .arco-carousel-indicator-item {
+    width: 4px;
+    height: 4px;
+    @apply !bg-text_color_04;
+
+    &:not(:last-child) {
+      @apply !mr-1;
+    }
+  }
+
+  .arco-carousel-indicator-item-active {
+    width: 12px;
+    @apply !bg-brand_color rounded-sm;
+  }
+
+  .arco-carousel-arrow-left, .arco-carousel-arrow-right {
+    @apply w-12 h-12 !bg-card_bg_color_04 drop-shadow-md;
+
+    > * {
+      @apply mt-0;
+    }
+
+  }
+
+  .arco-carousel-arrow-left {
+    left: calc(50% - 700px);
+
+    /* 
+    * push arrow icon into banner if not enough width
+    * 1200px(arco fixed width) + 65px(arrow icon plus gap) * 2 = 1330px
+    */
+    @media only screen and (max-width: 1330px) {
+      left: calc(50% - 600px);
+    }
+  }
+
+
+  .arco-carousel-arrow-right {
+    @apply -translate-y-1/2 -translate-x-full;
+
+    left: calc(50% + 700px);
+
+
+    /* 
+    * push arrow icon into banner if not enough width
+    * 1200px(arco fixed width) + 65px(arrow icon plus gap) * 2 = 1330px
+    */
+    @media only screen and (max-width: 1330px) {
+      left: calc(50% + 600px);
+    }
+  }
+}
+
+:local(.banner-pane) {
+
+  @apply bg-gradient-to-b from-brand_color_special_02 bg-bg_color; 
+
+
+  .banner-bg {
+    @apply absolute top-0 bottom-0 left-0 right-0 -z-1;
+    
+  }
+
+  .banner-img {
+    img {
+      max-height: 396px;
+    }
+  }
+
+  .pane-container {
+    width: 1200px;
+
+    @apply flex m-auto h-full justify-between;
+
+    .third-party {
+      @apply flex flex-row space-x-5;
+    }
+
+    .pane-title {
+      font-size: 40px;
+      @apply font-semibold;
+    }
+
+    .pane-subtitle {
+      font-size: 24px;
+      @apply mb-6 mt-2;
+    }
+
+    .pane-text-container {
+      max-width: 700px;
+      @apply flex flex-col justify-center;
+
+      > * {
+        @apply truncate;
+      }
+    }
+
+
+  }
+
+  .merge-mode-btn {
+    width: 192px !important;
+
+    @apply !bg-white !text-button_text_02 truncate;
+  }
+
+  .monkey-btn {
+    width: 380px;
+  }
+
+}
+
+
+
+:local(.banner-sign-in) {
+  width: 380px;
+
+  > .arco-btn-primary {
+    @apply font-medium;
+  }
+}

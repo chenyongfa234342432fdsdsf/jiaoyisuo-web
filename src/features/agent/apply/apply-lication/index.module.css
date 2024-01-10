@@ -1,0 +1,46 @@
+:local(.scoped) {
+  .footer-bg-img {
+    height: 312px;
+    @apply w-full flex justify-center;
+  }
+
+  .apply-footer-box {
+    width: 1280px;
+    padding-top: 60px;
+    @apply flex justify-center;
+  
+  
+    .apply-footer-box-lication {
+      @apply text-center;
+  
+      >div:nth-child(1) {
+        font-size: 40px;
+        line-height: 60px;
+        @apply text-center font-semibold  mb-4;
+      }
+  
+      >div:nth-child(2) {
+        width: 432px;
+        font-size: 16px;
+        line-height: 24px;
+        @apply text-center font-normal  mb-8;
+      }
+    }
+  }
+
+  .header-box-button {
+    @apply h-10 text-button_text_02 !important;
+  
+    width: auto;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    background: #F1AE3D !important;
+    border-radius: 20px
+    
+  }
+
+  
+  
+}

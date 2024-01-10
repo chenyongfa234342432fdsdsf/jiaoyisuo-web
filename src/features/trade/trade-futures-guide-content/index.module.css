@@ -1,0 +1,23 @@
+:local(.scoped) {
+  .text, .tips {
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .text {
+    @apply mb-2;
+
+    label {
+      @apply text-text_color_01;
+    }
+  }
+
+  .tips {
+    @apply mb-4;
+
+    label {
+      @apply text-brand_color;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+:local(.vip-perk-card-layout) {
+  .perk-img-tag {
+    top: -20px;
+    right: 54px;
+    @apply absolute;
+  }
+
+  .vip-perk-card {
+    width: 416px;
+    height: 462px;
+    @apply rounded-lg bg-card_bg_color_03 relative p-6 space-y-8 m-auto overflow-visible;
+
+    .title-container {
+      max-width: 250px;
+    }
+
+    .title {
+      @apply text-text_color_01 text-sm font-medium;
+    }
+
+    .subtitle {
+      @apply text-xs text-text_color_02;
+    }
+
+    .icon-title-layout {
+      @apply flex flex-row;
+
+      > :first-child {
+        @apply mb-auto mt-1 mr-2;
+      }
+    }
+
+    .level-icon {
+      img {
+        height: 18px;
+        @apply mr-auto mt-4;
+      }
+    }
+  }
+
+  .inactive-left {
+    height: 414px;
+    transform: translateX(calc(-100% + 16px));
+    @apply absolute top-6;
+  }
+
+  .inactive-right {
+    height: 414px;
+    transform: translateX(calc(100% - 16px));
+    @apply absolute top-6 right-0;
+  }
+}
+
+:local(.vip-perks-modal) {
+  width: 480px;
+  @apply !bg-toast_bg_color;
+
+  .icon-circle {
+    @apply bg-toast_bg_color;
+  }
+
+  .bar-wrapper {
+    max-width: 480px;
+
+    .tab {
+      @apply whitespace-nowrap;
+    }
+  }
+
+  .perks-tab {
+    @apply mb-8 !text-text_color_02 text-base font-medium;
+   
+    .active, .tab:hover, .item:hover {
+      @apply !text-button_text_01;
+    }
+  }
+
+  .arco-carousel-arrow-right {
+    right: -112px;
+    @apply w-12 h-12;
+  }
+
+  .arco-carousel-arrow-left {
+    left: -112px;
+    @apply w-12 h-12;
+  }
+
+  .arco-modal-content {
+    @apply px-0;
+  }
+
+  .arco-carousel {
+    height: 462px;
+    @apply mx-auto w-full;
+  }
+
+  .arco-modal-footer {
+    padding-bottom: 32px;
+    border-top-width: 0;
+
+    .default-btn {
+      @apply !bg-brand_color_special_02 !text-brand_color cursor-default;
+    }
+  }
+
+  .modal-divider {
+    width: 240px;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, #FFFFFF 47.4%, rgb(255 255 255 / 0%) 100%);
+    @apply mx-auto mt-6;
+  }
+
+  .close-icon {
+    bottom: -100px;
+    font-size: 32px;
+    @apply absolute left-1/2 -translate-x-1/2 translate-y-full;
+  }
+
+  .modal-btn {
+    @apply rounded-lg;
+  }
+
+
+  .arco-carousel-item-current, .arco-carousel-slide {
+    @apply overflow-visible overflow-x-clip;
+  }
+  
+}

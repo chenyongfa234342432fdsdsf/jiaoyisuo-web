@@ -1,0 +1,21 @@
+:local(.scoped) {
+  @apply mb-8;
+
+  .task-title {
+    font-size: 22px;
+    line-height: 34px;
+    @apply text-text_color_01 font-medium flex justify-between items-baseline;
+
+    .task-rule {
+      @apply text-xs text-brand_color underline cursor-pointer;
+    }
+  }
+
+  .arco-empty {
+    @apply pt-[118px] pb-[132px] !important;
+
+    img {
+      @apply w-[104px] h-[92px] !important;
+    }
+  }
+}

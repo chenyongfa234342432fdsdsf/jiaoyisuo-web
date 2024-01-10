@@ -1,0 +1,76 @@
+:local(.asset-popup-reset) {
+  border-radius: 20px !important;
+
+  &.arco-modal {
+    border-radius: 20px !important;
+    @apply bg-cover;
+
+  }
+
+  .arco-modal-content {
+    @apply px-0 pt-0;
+  }
+
+  .arco-modal-close-icon {
+    right: 28px;
+    @apply top-8;
+      
+    svg {
+      @apply w-5 h-5 text-icon_color;
+    }
+  }
+}
+
+:local(.apply-success-modal) {
+  @apply relative;
+
+  .apply-success-close-icon {
+    bottom: -88px;
+    @apply absolute left-40;
+  }
+
+  .apply-success-header {
+    @apply h-20 flex items-end justify-center relative;
+
+    background: linear-gradient(357deg, var(--bg_color) 31.48%, #FFECCE 101.92%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .apply-header-logo {
+      @apply absolute left-0 right-0 m-auto z-10;
+
+      top: -80%;
+      width: 116px;
+      height: 118px;
+    }
+
+    .apply-success-text {
+      @apply text-button_text_02 flex justify-center items-center text-base font-medium not-italic;
+    }
+  }
+
+  .apply-success-content {
+    @apply px-4;
+
+    border-radius: 8px;
+
+    .apply-success-box {
+      @apply bg-bg_color p-4 text-text_color_01 text-sm font-normal not-italic;
+
+      border-radius: 8px;
+
+      .brand {
+        @apply text-brand_color;
+      }
+
+      .button {
+        @apply w-full h-10;
+
+        font-weight: 500;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+    }
+  }
+}

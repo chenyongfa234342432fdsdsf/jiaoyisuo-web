@@ -1,0 +1,108 @@
+:local(.futures-position-table) {
+  @apply h-full flex flex-col;
+
+  .history-history-root {
+    overflow-y: auto;
+    @apply flex flex-col pr-4;
+  }
+
+  .arco-pagination {
+    @apply pr-6 h-10;
+  }
+
+  .arco-pagination-total-text {
+    @apply leading-10;
+  }
+
+  .arco-pagination {
+    .arco-pagination-total-text,
+    .arco-select-view {
+      @apply text-text_color_03;
+    }
+
+    .arco-select-view, 
+    .arco-pagination-option,
+    .arco-pagination-jumper-input {
+      height: 28px !important;
+      line-height: 26px !important;
+    }
+  }
+}
+
+:local(.history-history-wrapper) {
+  @apply w-full flex flex-col py-3 pl-8 pr-4;
+  
+  .header-wrap {
+    @apply flex items-center justify-between mb-3;
+    
+    .close-type {
+      @apply text-xs text-text_color_02 flex items-center;
+    }
+
+    .liquidation-type {
+      @apply cursor-pointer;
+
+      span {
+        @apply text-warning_color;
+      }
+    }
+    
+    .type-next-icon {
+      svg {
+        @apply w-2.5 h-2.5;
+      }
+    }
+  }
+    
+  .content {
+    @apply flex items-center flex-wrap pb-1 mb-2 border-b border-line_color_02;
+    
+    .info-cell {
+      @apply flex mb-2 text-xs items-center;
+    
+      width: 25%;
+        
+      .info-label {
+        @apply text-text_color_02 overflow-hidden text-ellipsis;
+  
+        min-width: 70px;
+      }
+        
+      .info-content {
+        @apply w-full text-text_color_01 whitespace-nowrap overflow-hidden text-ellipsis font-medium;
+      }
+    }
+
+    .line-third-info-cell {
+      .info-label {
+        min-width: 50px;
+      }
+    }
+  }
+    
+  .content-last {
+    @apply !text-end !mr-0;
+    
+    width: 25% !important;
+  }
+    
+  .date-cell {
+    @apply flex items-center justify-between mb-2 last:mb-0;
+    
+    .date-label {
+      @apply text-xs text-text_color_02;
+    
+      line-height: 18px;
+    }
+    
+    .date-content {
+      @apply text-xs text-text_color_01;
+    
+      line-height: 18px;
+    }
+  }
+    
+  .info-list:nth-child(3n) {
+    margin: 0;
+  }
+}

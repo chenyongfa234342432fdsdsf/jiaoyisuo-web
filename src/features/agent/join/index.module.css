@@ -1,0 +1,317 @@
+.personal-center-agent-join {
+  @apply flex-1;
+}
+
+:local(.scoped) {
+  .page-box-form {
+    height: 46px !important;
+
+    span {
+      @apply rounded-lg !important;
+    }
+
+    .arco-input.arco-input-size-default {
+      font-weight: 500 !important;
+    }
+  }
+
+  @apply w-full bg-bg_color;
+
+  .section {
+    @apply bg-bg_color flex justify-center items-center w-full mt-8;
+
+    .agent-join-form {
+      width: 840px;
+
+      .formblink-enter-done {
+        @apply mt-1
+      }
+
+      .agent-join-topmargin {
+        @apply mt-8 !important;
+      }
+
+      .agent-join-form-topmargin {
+        @apply mt-4 !important;
+      }
+
+      .agent-join-form-item {
+        .agent-join-form-item-label {
+          @apply text-text_color_01 text-sm font-normal not-italic;
+        }
+
+        .agent-join-form-item-value {
+          @apply flex mt-2;
+
+          .agent-join-form-item-select-box {
+            @apply mr-4 flex-1;
+
+            .arco-select-view {
+              height: 46px;
+              @apply flex items-center rounded-lg !important;
+
+              .arco-select-view-value {
+                height: 100%;
+              }
+            }
+
+            .selecked-text {
+              @apply text-text_color_01 font-medium;
+            }
+
+            .arco-select-view-value {
+              line-height: 44px;
+            }
+          }
+
+          .join-form-item-input {
+            /* .arco-input .arco-input-size-default {
+              font-weight: 500 !important;
+            } */
+
+            @apply flex-1;
+
+            .arco-form-item {
+              @apply mb-0;
+            }
+
+            .arco-input {
+              height: 44px;
+              font-weight: 400;
+              font-size: 14px;
+              font-style: normal;
+              line-height: 22px;
+              border-radius: 8px !important;
+            }
+
+            .agent-join-form-item-textarea {
+              border: 1px solid var(--line_color_01);
+              border-radius: 8px !important;
+              @apply bg-bg_color;
+            }
+
+            span {
+              @apply text-text_color_04;
+            }
+
+            .arco-textarea-word-limit {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .agent-join-form-item-button {
+          @apply w-full;
+
+          & > span {
+            @apply text-button_text_02;
+
+            font-weight: 500;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 24px;
+          }
+        }
+
+        .arco-btn-disabled {
+          & > span {
+            @apply text-text_color_04;
+
+            font-weight: 500;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .select-input .arco-input-inner-wrapper {
+        @apply rounded-lg bg-bg_color	!important;
+      }
+    }
+  }
+
+  .no-pass {
+    @apply flex flex-col justify-center items-center;
+
+    height: 666px;
+
+    .regidter-icon {
+      svg {
+        width: 123px;
+        height: 105px;
+      }
+    }
+
+    .regidter-faile-icon {
+      svg {
+        width: 78px;
+        height: 78px;
+      }
+    }
+
+    .no-pass-title {
+      @apply text-text_color_01 mt-6 text-xl font-medium not-italic;
+    }
+
+    .no-pass-subtitle {
+      @apply text-text_color_02 mt-2 text-sm font-normal not-italic;
+    }
+
+    .no-pass-submit {
+      @apply mt-8;
+
+      width: 380px;
+
+      .button {
+        @apply w-full;
+
+        & > span {
+          @apply text-button_text_02;
+
+          font-weight: 500;
+          font-size: 16px;
+          font-style: normal;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+:local(.agent-join-modal) {
+  @apply overflow-hidden rounded-lg bg-transparent !important;
+
+  .arco-modal-content {
+    @apply p-0;
+  }
+
+  .agent-join-submit-box {
+    border-radius: 20px !important;
+    @apply p-8 bg-card_bg_color_03;
+
+    .agent-join-submit-header {
+      @apply flex justify-between items-center relative;
+
+      .agent-join-submit-header-title {
+        @apply text-text_color_01 flex-1 text-center text-xl font-medium not-italic;
+      }
+
+      .agent-join-submit-header-icon {
+        @apply absolute top-0 right-0;
+      }
+    }
+
+    .agent-join-submit-content {
+      @apply text-text_color_01 mt-6 text-sm font-normal not-italic;
+    }
+
+    .agent-join-submit-footer {
+      @apply flex;
+
+      .button {
+        @apply flex-1 mt-6 h-10 rounded-lg;
+
+        font-weight: 500;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+
+      .button:first-child {
+        @apply text-text_color_01 mr-5 bg-bg_sr_color border-none;
+      }
+    }
+  }
+}
+
+:local(.select-container) {
+  @apply flex items-center justify-between relative rounded;
+
+  height: 46px;
+  border: 1px solid var(--line_color_01);
+  border-radius: 8px;
+
+  &.error {
+    border: 1px solid rgb(var(--danger-6));
+  }
+
+  &.focus {
+    border: 1px solid var(--brand_color);
+  }
+
+  .select-box {
+    .arco-select-view {
+      border-radius: 8px;
+      @apply pr-0;
+    }
+  }
+
+  .select-input {
+    border-radius: 8px !important;
+    @apply border-none pl-2;
+
+    .arco-input-inner-wrapper {
+      @apply border-none pl-0;
+    }
+  }
+}
+
+:local(.select) {
+  .arco-select-view {
+    @apply border-none rounded-none;
+
+    /* height: 18px !important; */
+
+    /* border-right: 1px solid var(--line_color_02); */
+
+    &::after {
+      @apply ml-2 bg-line_color_02;
+
+      width: 1px;
+      height: 18px;
+      margin-top: 11.5px;
+      margin-left: 2px;
+
+      /* background: var(--line_color_02); */
+      content: '';
+    }
+
+    .arco-select-view-input::placeholder {
+      @apply text-text_color_04;
+
+      /* color: red; */
+    }
+  }
+}
+
+:local(.select-option) {
+  @apply flex items-center px-1;
+
+  height: 42px;
+
+  .icon {
+    @apply rounded-full;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .text {
+    @apply text-text_color_01 ml-2.5;
+
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px;
+  }
+
+  .selecked-text {
+    @apply text-brand_color ml-2.5;
+
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px;
+  }
+}

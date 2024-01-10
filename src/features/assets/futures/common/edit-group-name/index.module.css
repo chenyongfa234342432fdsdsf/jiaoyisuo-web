@@ -1,0 +1,41 @@
+:local(.scoped) {
+  .arco-input-inner-wrapper {
+    height: 42px;
+    @apply bg-bg_sr_color border-transparent;
+
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }  
+
+    &::placeholder {
+      @apply relative text-text_color_04 text-sm;   
+    }
+  }
+
+  .check-error {
+    .arco-input-inner-wrapper {
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+}
+
+:local(.position-modal-header-root) {
+  @apply px-0 w-full flex flex-col border-b border-line_color_02 bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg pb-4;
+
+  .position-modal-header-title {
+    line-height: 30px;
+    @apply flex items-center justify-between text-xl text-text_color_01 font-medium;
+  }
+
+  .name-cell {
+    @apply flex items-center mt-2 mb-4;
+  }
+}
+
+
+

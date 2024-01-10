@@ -1,0 +1,6 @@
+:local(.scoped) {
+  label {
+    font-size: 32px;
+    @apply text-text_color_01 leading-9 font-medium;
+  }
+}

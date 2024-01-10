@@ -1,0 +1,70 @@
+:local(.scoped) {
+  .agent-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .agent-apply-content {
+    @apply mx-auto flex justify-center items-center bg-card_bg_color_01;
+
+    .agent-apply-welfare {
+      width: 1200px;
+      @apply flex justify-between items-center;
+    }
+
+    .agent-apply-content-l-box {
+      .agent-apply-content-title {
+        @apply text-text_color_01 text-xl font-medium not-italic;
+      }
+
+      .agent-apply-content-subtitle {
+        @apply text-text_color_02 mt-2 font-normal not-italic;
+
+        font-size: 14px;
+        line-height: 27px;
+      }
+
+      .listitem-box {
+        .list-item {
+          @apply flex mt-8;
+
+          .list-item-l-box {
+            width: 50px;
+            height: 50px;
+   
+            @apply rounded-full bg-card_bg_color_02;
+          }
+
+          .list-item-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+          }
+
+          .list-item-r-box {
+            @apply ml-4;
+
+            .list-item-title {
+              @apply text-text_color_01 text-base font-medium not-italic;
+            }
+
+            .list-item-content {
+              @apply text-text_color_02 mt-2 font-normal not-italic;
+
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .img {
+      }
+    }
+
+    .agent-apply-content-r-box {
+    }
+  }
+}

@@ -1,0 +1,53 @@
+:local(.scoped) {
+  @apply flex-1 h-full flex flex-col;
+
+  .welcome-back-body {
+    padding-top: 140px;
+    @apply flex-1 bg-bg_color;
+
+    .main {
+      width: 1200px;
+      @apply m-auto h-full;
+
+      .personal-center-back {
+        @apply flex items-center;
+  
+        svg {
+          width: 14px;
+          height: 14px;
+          @apply mr-1;
+        }
+    
+        label {
+          @apply text-text_color_02 text-base leading-4 font-medium cursor-pointer;
+        }
+      }
+
+      .welcome-back-content {
+        width: 380px;
+        @apply m-auto;
+
+        p {
+          font-size: 32px;
+          @apply mb-4 font-semibold text-text_color_01;
+        }
+
+        label {
+          @apply text-xl font-semibold text-text_color_01;
+        }
+
+        .arco-form-label-item {
+          @apply hidden;
+        }
+
+        .arco-input-group-wrapper {
+          @apply mt-8;
+        }
+
+        .welcome-back-button {
+          @apply mt-8 w-full;
+        }
+      }
+    }
+  }
+}

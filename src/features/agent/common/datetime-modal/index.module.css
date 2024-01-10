@@ -1,0 +1,46 @@
+:local(.datetime-modal) {
+  min-width: 580px;
+  @apply bg-bg_color;
+
+  .arco-modal-title {
+    margin-top: 34px;
+  }
+
+  .arco-picker-range-container, .arco-picker-range {
+    width: 540px;
+  }
+
+  .arco-picker-range-container {
+    box-shadow: none;
+    @apply border-none;
+  }
+
+  .arco-trigger {
+    @apply static;
+  }
+
+  .arco-modal-content {
+    /* date range pickup component */
+    :last-child {
+      @apply !static;
+    }
+  }
+
+  .arco-modal-footer {
+    border-top: 0;
+  }
+
+  .arco-picker {
+    height: 40px !important;
+    border-color: transparent !important;
+    @apply !bg-bg_sr_color;
+  }
+  
+  .arco-picker-focused .arco-picker-input-active input {
+    @apply bg-bg_sr_color;
+  }
+}
+
+:local(.ta-date-picker) {
+
+}

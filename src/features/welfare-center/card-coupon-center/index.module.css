@@ -1,0 +1,62 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply mx-auto;
+
+  .arco-spin-loading-layer-inner {
+    @apply fixed;
+  }
+
+  .arco-tabs-header-scroll {
+    @apply border-b border-line_color_02  !important;
+  }
+
+  .card-coupon-center-header {
+    /* @apply sticky;
+
+    top: 100px; */
+    @apply mb-8;
+    
+    .arco-tabs-header-title:first-child {
+      @apply ml-0 !important;
+    }
+      
+    .arco-tabs-header-nav::before {
+      @apply hidden;
+    }
+
+    .arco-icon-hover {
+      @apply hidden;
+    }
+
+    .arco-tabs-header-title-active {
+      @apply border-none relative !important;
+
+      .arco-tabs-header-title-text {
+        @apply text-text_color_01 font-medium !important;
+      }
+    }
+
+    .arco-tabs-header-title-text {
+      font-size: 22px;
+      @apply border-none text-text_color_02 font-medium !important;
+    }
+
+    .arco-tabs-header-title-text::before {
+      outline: 0  !important;
+      @apply border-none hidden !important;
+    }
+
+    .arco-tabs-header-ink {
+      @apply hidden !important;
+    }
+
+    .arco-tabs-header-title-active::before {
+      bottom: -0.5px;
+      width: 28px;
+      margin-left: -14px;
+      content: "" !important;
+      @apply absolute  left-1/2 h-0.5 bg-brand_color !important;
+    }
+  
+  }
+}

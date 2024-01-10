@@ -1,0 +1,65 @@
+:local(.pyramid-invite-manage) {
+  @apply flex flex-1 mb-6 pb-6 px-8 justify-between items-center text-base border-b border-line_color_02;
+
+  .invite-code-name {
+    @apply w-2/5 text-text_color_01 font-medium text-base leading-7;
+  }
+
+  .link-text {
+    @apply text-brand_color text-base;
+  }
+}
+
+
+:local(.menu-wrapper) {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-bg_color rounded py-2;
+  
+  .cell {
+    @apply flex cursor-pointer px-4 items-center text-text_color_01 text-sm;
+
+    min-width: 192px;
+    max-width: 400px;
+
+    &:hover {
+      @apply text-brand_color bg-card_bg_color_02;
+    }
+  }
+
+  .cell-wrap {
+    @apply py-2 overflow-hidden text-ellipsis whitespace-nowrap break-keep;
+
+    .icon {
+      @apply w-2 h-2 ml-1;  
+    }
+
+    &.active {
+      @apply text-brand_color;
+    }
+  }
+}
+  
+:local(.trigger-wrapper) {
+  @apply cursor-pointer truncate border-line_color_02;
+
+  .name-wrap {
+    @apply flex flex-row items-center;
+  }
+
+  .name {
+    @apply truncate;
+  }
+  
+  .icon {
+    @apply ml-1 w-2 h-auto;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    .icon {
+      @apply rotate-180;
+    }
+  }
+}
+  

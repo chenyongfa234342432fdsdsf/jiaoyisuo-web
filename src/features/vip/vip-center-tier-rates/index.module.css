@@ -1,0 +1,75 @@
+:local(.scoped) {
+  /* border-width: 0.5px;
+  @apply p-4 rounded-lg; */
+  @apply pt-4;
+}
+
+:local(.tier-rates-table) {
+  border-width: 0.5px; 
+  @apply w-full border-line_color_02;
+
+  tr {
+    td, th {
+      padding-left: 32px;
+      border-left-width: 1px;
+      @apply border-line_color_02;
+    }
+
+    > :first-child {
+      padding-left: 0;
+      border-left-width: 0;
+    }
+  }
+
+  thead {
+    height: 40px;
+    @apply bg-card_bg_color_01;
+
+    th {
+      @apply py-2 text-sm font-normal text-text_color_02;
+
+      &:not(:first-child) {
+        @apply text-left;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        @apply pt-4;
+
+        &:first-child {
+          @apply text-center text-text_color_02 text-sm font-normal;
+        }
+      }
+    }
+
+    &:last-child tr {
+      td {
+        @apply pb-4;
+      }
+    }
+  }
+
+  .td-layout {
+    @apply grid grid-cols-2;
+
+    > :first-child {
+      @apply mr-auto;
+    }
+  }
+
+}
+
+:local(.tier-rates-table-item) {
+  @apply inline-block;
+
+  .tag, .brand-tag {
+    @apply px-2 py-0.5 rounded-full bg-brand_color_special_02 text-brand_color ml-1;
+  }
+
+  .tag {
+    @apply text-text_color_03 bg-card_bg_color_02;
+  }
+}

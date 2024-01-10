@@ -1,0 +1,96 @@
+:local(.scoped) {
+  @apply px-4 py-3 box-border;
+
+  /* border-bottom: 1px solid var(--line_color_02); */
+
+  .time {
+    @apply text-xs leading-[18px] text-text_color_03;
+  }
+
+  .up-and-down {
+    .down {
+      @apply bg-sell_down_color;
+
+    }
+
+    .up {
+      @apply bg-buy_up_color;
+    }
+  }
+
+  .bar-wrapper {
+    @apply my-2 flex relative;
+
+    .bar {
+      @apply h-3;
+
+      position: relative;
+
+      &::after {
+        content: "";
+
+        @apply absolute left-0 top-0 right-0 bottom-0;
+     
+      }
+
+      &::before {
+        @apply absolute top-0 rounded-full h-3;
+
+        
+        width: 20%;
+        content: "";
+      }
+
+
+      &.up {
+        @apply rounded-r-full;
+
+        &::after,
+        &::before {
+          @apply bg-buy_up_color;
+        }
+
+        &::after {
+          @apply rounded-t-sm rounded-b;
+
+          transform: skewX(-30deg);
+        }
+
+        &::before {
+          right: -12px;
+        }
+      }
+
+      &.down {
+        @apply rounded-l-full;
+
+        &::after,
+        &::before {
+          @apply bg-sell_down_color;
+        }
+
+        &::before {
+          @apply rounded-t rounded-b-sm;
+
+          right: -12px;
+          transform: skewX(-30deg);
+        }
+
+        &::after {
+          @apply rounded-full;
+        }
+      }
+    }
+
+    .white-clip {
+      @apply absolute top-0 w-2 h-3 bg-bg_color;
+
+      /* 变为平行四边形 */
+      transform: skew(-20deg);
+    }
+  }
+
+  .up-down-word {
+    @apply flex justify-between;
+  }
+}

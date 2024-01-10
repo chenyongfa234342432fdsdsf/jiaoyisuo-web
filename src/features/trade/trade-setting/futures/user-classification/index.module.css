@@ -1,0 +1,81 @@
+:local(.scoped) {
+  .container {
+    @apply flex flex-col;
+
+    .options {
+      @apply flex flex-col justify-between flex-1 mb-6;
+
+      .options-wrap {
+        @apply flex-1 flex rounded-lg p-2 border-x border-y border-card_bg_color_01 bg-card_bg_color_01 mb-6;
+
+        .options-content {
+          @apply flex-1 p-3 cursor-pointer rounded-lg relative bg-card_bg_color_03;
+  
+          label {
+            @apply cursor-pointer;
+          }
+  
+          .title {
+            @apply flex flex-col items-center mb-5;
+    
+            label {
+              font-size: 16px;
+              @apply text-text_color_01 font-medium;
+            }
+          }
+
+          .image {
+            @apply flex justify-center mb-1;
+
+            .image-wrap {
+              width: 235px;
+              height: 108px;
+            }
+          }
+  
+          .content {
+            .text {
+              line-height: 16px;
+              @apply text-text_color_02 mb-2;
+
+              svg {
+                @apply w-1 h-1 mr-1;
+              }
+
+              &:last-child {
+                @apply mb-1;
+              }
+            }
+          }
+  
+          .checked-icon {
+            @apply absolute right-0 top-0;
+  
+            & > div {
+              margin-top: -1px;
+              @apply align-super;
+            }
+  
+            svg {
+              width: 22px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+    }
+    
+    .btn {
+      .arco-btn {
+        @apply w-full;
+      }
+    }
+
+    .checked {
+      .options-wrap {
+        border: 1px solid var(--brand_color);
+      }
+    }
+  }
+}

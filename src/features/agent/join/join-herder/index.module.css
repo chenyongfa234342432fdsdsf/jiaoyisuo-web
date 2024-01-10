@@ -1,0 +1,42 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 flex justify-center;
+
+  height: 270px;
+
+  .header {
+    margin-left: 173px;
+    @apply flex;
+
+    .herder-left {
+      width: 484px;
+      @apply relative
+    }
+
+    .herder-page {
+      @apply flex justify-center;
+    
+      .header-box {
+        width: 529px;
+        padding-top: 77px;
+      
+        .header-box-text {
+          @apply font-semibold not-italic text-text_color_01;
+
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 60px;
+        }
+      
+        .header-box-sub-text {
+          @apply mt-2 text-base font-normal not-italic text-text_color_01;
+
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    
+       
+  }
+}

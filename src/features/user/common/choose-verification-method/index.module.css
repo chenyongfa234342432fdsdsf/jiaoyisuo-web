@@ -1,0 +1,25 @@
+:local(.scoped) {
+  .title {
+    @apply mb-8;
+
+    label {
+      @apply text-text_color_01 text-4xl leading-9 font-medium;
+    }
+  }
+
+  .user-customize-tabs-button {
+    .tab {
+      @apply rounded-lg overflow-hidden;
+
+      .item {
+        @apply !px-6 text-base text-text_color_03;
+      }
+    }
+
+    .active {
+      .item {
+        @apply text-text_color_01;
+      }
+    }
+  }
+}

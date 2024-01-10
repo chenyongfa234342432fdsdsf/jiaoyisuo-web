@@ -1,0 +1,68 @@
+:local(.order-menus) {
+  --content-width: 1264px;
+
+  .content-width-limit {
+    @apply mx-auto px-8;
+  
+    max-width: var(--content-width);
+  }
+
+  .top-menus {
+    @apply sticky h-14 bg-bg_color;
+
+    top: 60px;
+    z-index: 3;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%);
+
+
+  }
+
+  .title-box {
+    @apply bg-card_bg_color_01 py-8;
+
+    .title {
+      @apply font-medium;
+
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+
+  .order-menu-item {
+    @apply h-14 text-base text-text_color_02 mx-7 cursor-pointer flex relative flex-row items-center font-medium first:ml-0;
+
+    &.is-selected,
+    &:hover {
+      @apply text-brand_color;
+      
+    }
+
+    &.is-selected {
+      .status-bar {
+        @apply block;
+      }
+    }
+
+    .status-bar {
+      @apply hidden absolute bottom-0 left-0 bg-brand_color w-full;
+
+      height: 2px;
+    }
+
+    svg {
+      @apply w-6 h-6;
+    }
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+
+  .sub-menus {
+    @apply sticky bg-bg_color;
+
+
+    top: 116px;
+    z-index: 2;
+  }
+}

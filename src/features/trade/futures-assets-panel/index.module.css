@@ -1,0 +1,6 @@
+:local(.scoped) {
+  .icon-arrow {
+    margin-top: -2px;
+    font-size: 8px;
+  }
+}

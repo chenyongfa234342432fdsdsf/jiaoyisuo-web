@@ -1,0 +1,21 @@
+:local(.scoped) {
+  .task-title {
+    font-size: 22px;
+    line-height: 34px;
+    @apply text-text_color_01 font-medium;
+  }
+
+  .record-tabs {
+    @apply mt-3;
+
+    .arco-tabs-header-title-text {
+      font-size: 16px;
+      @apply font-medium;
+    }
+
+    .arco-tabs-content {
+      @apply pt-0;
+    }
+  }
+}
+  

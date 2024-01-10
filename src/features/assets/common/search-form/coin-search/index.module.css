@@ -1,0 +1,8 @@
+:local(.scoped) {
+  div.assets-search-input .arco-input-inner-wrapper {
+    @apply h-10 rounded border border-line_color_02;
+    
+    background: none;
+  }
+  
+}  

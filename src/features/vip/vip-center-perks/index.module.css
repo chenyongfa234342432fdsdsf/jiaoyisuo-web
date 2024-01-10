@@ -1,0 +1,18 @@
+:local(.vip-center-perks-item) {
+  height: 78px;
+  @apply flex flex-row justify-between px-8 py-4 rounded-lg bg-card_bg_color_01 hover:bg-bg_color_03 cursor-pointer;
+
+
+  .icon-container {
+    width: 40px;
+    height: 40px;
+    @apply bg-card_bg_color_02 rounded-full relative mr-4;
+
+    img {
+      @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+  }
+}
+
+:local(.vip-center-perks) {
+}

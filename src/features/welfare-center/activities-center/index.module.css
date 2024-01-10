@@ -1,0 +1,4 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply mx-auto;
+}

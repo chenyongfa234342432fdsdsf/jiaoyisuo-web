@@ -1,0 +1,70 @@
+:local(.ternary-tab-wrapper) {
+  @apply h-full flex flex-col overflow-y-hidden relative;
+  
+  .arco-table-container {
+    border-top: none;
+  }
+  
+  .filters-wrapper {
+    @apply px-8 pt-4 flex justify-between items-center;
+  }
+  
+  .tabs-wrapper {
+    @apply pl-4 pr-8 border-b border-solid border-line_color_02 sticky top-0 bg-bg_color z-30;
+  }
+  
+  .content-wrapper {
+    @apply flex-1 h-0;
+  }
+}
+
+:local(.ternary-option-tab-select) {
+  @apply flex items-center;
+
+  .tab-select-item {
+    @apply mr-4;
+  }
+}
+
+.tab-select-popover-item {
+  @apply w-20 !important;
+}
+
+.tab-select-popover-name {
+  @apply w-32 !important;
+}
+
+:local(.date-select-wrapper) {
+  width: 240px;
+
+  &.in-trade {
+    @apply bg-transparent h-6 border-transparent hover:border-transparent;
+
+    &.arco-picker-size-default input {
+      @apply text-xs;
+    }
+  }
+}
+
+:local(.date-select-modal-wrapper) {
+  .arco-picker-cell-in-view .arco-picker-date-value,
+  .arco-picker-header-value {
+    @apply font-normal;
+  }
+
+  &.in-trade {
+    .arco-picker-cell-in-view .arco-picker-date-value,
+    .arco-picker-header-value,
+    .arco-picker-week-list-item {
+      font-size: 12px;
+    }
+  }
+}
+
+:local(.popup-select-icon) {
+  @apply w-2 h-2;
+
+  svg {
+    @apply w-full h-full;
+  }
+}

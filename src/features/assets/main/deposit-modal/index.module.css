@@ -1,0 +1,90 @@
+:local(.deposit-modal) {
+  width: 480px;
+
+  .arco-spin {
+    display: block;
+  }
+
+  .address-form {
+    @apply mb-6 flex bg-bg_sr_color rounded-lg justify-between items-center px-3;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    .info {
+      @apply text-text_color_01 flex-1 mr-3 break-all font-medium;
+    }
+  }
+
+  .assets-label {
+    @apply text-text_color_02 mb-2 mt-6 first-of-type:mt-0;
+
+  }
+
+  .arco-modal-header {
+    height: unset;
+    padding: 33px 33px 15px;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  .arco-modal-content {
+    padding: 16px 31px 32px 33px;
+  }
+
+  .arco-modal-close-icon {
+    top: 34px;
+    right: 29px;
+  }
+
+  .confirm-wrap {
+    @apply bg-bg_sr_color rounded-lg p-3 flex flex-col space-y-2;
+
+    width: 248px;
+  }
+
+  .confirm-item {
+    @apply flex justify-between;
+
+    .label {
+      @apply flex text-text_color_02;
+    }
+
+    .icon-wrap {
+      @apply ml-1;
+    }
+  }
+
+  .arco-select .arco-select-view {
+    border: none;
+    @apply !bg-bg_sr_color rounded-lg;
+  }
+
+  .pay-qr-code {
+    @apply flex justify-center items-center flex-col;
+  }
+
+  .pay-tips {
+    @apply text-xs text-text_color_02 mt-2;
+  }
+
+  .stop-service-icon {
+    @apply mt-6;
+  }
+
+  .opt-button-gray {
+    @apply block text-sm w-full text-center px-4 rounded-lg bg-bg_sr_color text-text_color_01 font-medium;
+
+    height: 40px;
+    line-height: 40px;
+
+    &:hover {
+      @apply bg-button_hover_01;
+    }
+  }
+
+  .opt-btn {
+    @apply w-full text-sm font-medium;
+
+    height: 40px;
+  }
+}

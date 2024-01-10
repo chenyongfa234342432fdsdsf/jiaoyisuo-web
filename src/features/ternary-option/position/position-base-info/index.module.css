@@ -1,0 +1,36 @@
+:local(.position-base-tag-root) {
+  @apply flex items-center justify-center;
+    
+  .name {
+    @apply inline-flex justify-center items-center text-sm text-text_color_01 font-medium cursor-pointer;
+
+    line-height: 22px;
+  }
+
+  img {
+    border-radius: 50%;
+    @apply mr-1;
+  }
+    
+  .next-icon {
+    @apply pl-1 pr-2 mt-0;
+    
+    svg {
+      @apply text-sm;
+    }
+  }
+
+  .tag {
+    @apply rounded-sm px-1 inline-flex items-center justify-center text-xs ml-1;
+
+    height: 18px;
+  }
+
+  .type-call {
+    @apply bg-buy_up_color_special_02 text-buy_up_color;
+  }
+
+  .type-put {
+    @apply bg-sell_down_color_special_02 text-sell_down_color;
+  }
+}

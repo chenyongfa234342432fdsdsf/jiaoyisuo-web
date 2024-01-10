@@ -1,0 +1,33 @@
+:local(.scoped) {
+  width: 400px;
+  @apply m-auto space-y-4;
+
+  .cancellation-title {
+    font-size: 32px;
+    @apply font-semibold;
+  }
+
+  textarea {
+    @apply bg-transparent border-line_color_01;
+  }
+
+  .arco-alert-icon-wrapper {
+    @apply mb-auto;
+  }
+
+  .arco-select-prefix {
+    @apply mr-0;
+  }
+
+  .arco-image {
+    margin-right: 10px;
+    @apply mt-1;
+    @apply w-4 h-4 rounded-full;
+
+    img {
+      @apply w-full;
+    }
+  }
+
+ 
+}

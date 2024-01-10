@@ -1,0 +1,38 @@
+:local(.scoped) {
+  @apply w-full mx-auto flex justify-center items-center bg-contain bg-no-repeat bg-center;
+  
+  height: 120px;
+  margin-top: 60px;
+    
+  .agent-apply-wrap {
+    @apply w-full flex items-center justify-between h-full cursor-pointer;
+
+    .apply-text-box {
+      width: 75%;
+      padding-left: 154px;
+      @apply flex flex-col justify-center not-italic;
+
+      .apply-text1 {
+        @apply text-button_text_01 leading-9 font-medium;
+  
+        font-size: 28px;
+      }
+      
+      .apply-text2 {
+        @apply text-text_color_02 text-xl;
+      
+        line-height: 30px;
+      }
+    }
+
+    .apply-btn-box {
+      .apply-btn {
+        @apply mr-12 px-3 flex shrink-0 justify-center items-center bg-brand_color text-button_text_02 text-base font-medium not-italic;
+
+        height: 34px;
+        line-height: 22px;
+        border-radius: 29px;
+      }
+    }  
+  }
+}

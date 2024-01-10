@@ -1,0 +1,22 @@
+:local(.scoped) {
+
+}
+
+:local(.avatar-upload-modal) {
+  width: 444px;
+
+  .upload-modal-content {
+    min-height: 175px;
+    border-width: 0.5px;
+    @apply rounded-lg border-line_color_01 flex;
+
+    .uploader {
+      @apply m-auto text-center;
+
+      .arco-icon {
+        font-size: 28px;
+      }
+    }
+  }
+  
+}

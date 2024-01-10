@@ -1,0 +1,42 @@
+/* stylelint-disable color-function-notation */
+:local(.future-account-tip) {
+  width: 444px !important;
+
+  .arco-modal-content {
+    @apply p-4 !important;
+  }
+  
+  .arco-modal-header {
+    padding-top: 30px;
+    @apply px-8 !important;
+  }
+  
+  .arco-modal-close-icon {
+    top: 30px;
+  }
+  
+  .arco-modal-content {
+    @apply p-8 !important;
+  }
+  
+  .account-tip-container {
+    .future-account-lottie {
+      width: 380px;
+      height: 117px;
+    }
+  }
+  
+  .arco-modal {
+    @apply relative;
+  }
+  
+  .future-account-arrow-left {
+    left: -80px; 
+    @apply w-12 h-12 absolute top-1/2 -mt-12;
+  }
+  
+  .future-account-arrow-right {
+    right: -80px; 
+    @apply w-12 h-12 absolute top-1/2 -mt-12;
+  }
+}

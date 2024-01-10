@@ -1,0 +1,122 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply mx-auto;
+  
+
+  .all-card-coupon-item {
+    @apply px-4 py-0.5 text-text_color_02 text-sm relative;
+  }
+  
+  .all-card-coupon-item-reddot::before {
+    content: "";
+    @apply absolute w-1 h-1 right-3 top-1 bg-sell_down_color rounded-full !important;
+  }
+
+  .all-card-coupon-item-checked {
+    @apply text-text_color_01 bg-bg_sr_color rounded-lg;
+  }
+  
+
+  .all-card-coupon-header {
+    @apply mb-8;
+    
+    .arco-radio-group {
+      .arco-radio:first-child {
+        @apply pl-0 !important;
+      }
+
+      .arco-radio {
+        @apply mr-6;
+      }
+    }
+  }
+  
+  .all-card-coupon-status {
+    @apply mb-8 flex justify-between items-center;
+
+    .arco-radio-group {
+      .arco-radio:first-child {
+        @apply pl-0 !important;
+      }
+    }
+  }
+  
+  .all-card-coupon-container {
+    @apply flex flex-wrap justify-between;
+  }
+  
+ 
+}
+
+
+:local(.card-coupon-item) {
+  @apply flex justify-between;
+
+  .card-coupon-item-button {
+    z-index: 2;
+    height: 26px;
+    margin-top: 27px;
+    border-radius: 23px;
+    @apply flex justify-center items-center px-3.5 bg-brand_color mr-4 text-button_text_02 text-xs cursor-pointer;
+  }
+  
+  .card-coupon-item-left {
+    margin-top: 18px;
+    @apply flex ml-4;
+    
+    .card-coupon-item-icon {
+      width: 44px;
+      height: 44px;
+      @apply bg-brand_color_special_02 rounded-full flex justify-center items-center;
+      
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    .card-coupon-item-left-detail {
+      @apply ml-3;
+
+      .card-coupon-num {
+        @apply text-xl text-text_color_01 font-semibold;
+      }
+      
+      .card-coupon-condition {
+        @apply text-text_color_03 text-xs;
+      }
+      
+      .card-coupon-money {
+        @apply text-text_color_01 text-xs mt-0.5;
+        
+        span {
+          @apply text-text_color_03 text-xs;
+        }
+      }
+    }
+  }
+  
+  .card-coupon-item-left-not {
+    .card-coupon-item-icon {
+      @apply bg-card_bg_color_02;
+    }
+
+    .card-coupon-item-left-detail {
+      .card-coupon-num {
+        @apply text-text_color_04;
+      }
+
+      .card-coupon-condition {
+        @apply text-text_color_04;
+      }
+      
+      .card-coupon-money {
+        @apply text-text_color_04;
+        
+        span {
+          @apply text-text_color_04;
+        }
+      }
+    }
+  }
+}

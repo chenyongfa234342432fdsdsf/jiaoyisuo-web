@@ -1,0 +1,256 @@
+
+:local(.common) {
+  &> div {
+    @apply bg-bg_color;
+  }
+
+  .header-wrap {
+    grid-area: header;
+  }
+
+  .orderbook-wrap {
+    grid-area: orderbook;
+  }
+
+  .market-select-history-wrap {
+    grid-area: market-select-history;
+    max-width: 100%;
+  }
+
+  .market-movements {
+    grid-area: market;
+
+  }
+
+  .search-history-wrap {
+    grid-area: search-history;
+  }
+
+  .market-wrap {
+    grid-area: market;
+
+  }
+
+  .market-change-wrap {
+    grid-area: market-change;
+    max-width: 100%;
+  }
+
+  .chart-wrap {
+    grid-area: chart;
+
+    @apply flex items-center justify-center;
+
+    .tv-lightweight-charts {
+      @apply !w-full !h-full;
+
+      table {
+        @apply !w-full !h-full;
+      }
+    }
+
+    /* 这些地方用 100% 效果是一样的，不覆盖 js 写在 style 里的值的话会导致从大屏幕变小屏幕后无法自适应 */
+    canvas,
+    .tv-lightweight-charts,
+    table {
+      /** 升级后加上有问题 **/
+
+      /* height: 100% !important; */
+
+      td {
+        height: 100% !important;
+
+        > div {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+
+  .market-detail-wrap {
+    grid-area: market-detail;
+  }
+
+  .trade-assets-wrap {
+    grid-area: trade-assets;
+  }
+
+  .trade-form-wrap {
+    grid-area: trade-form;
+  }
+
+  .trade-list-wrap {
+    grid-area: trade-list;
+  }
+
+  .market-list-wrap {
+    grid-area: market-list;
+
+  }
+
+  .announcements-wrap {
+    grid-area: announcements;
+  }
+
+  .trade-side-wrapper,
+  .orderbook-side-wrapper {
+    /* 不加相对定位会被 k 线遮住 */
+    @apply grid gap-px bg-line_color_02 relative z-10;
+
+    >* {
+      @apply bg-bg_color w-full overflow-hidden;
+    }
+  }
+
+  .trade-side-wrapper {
+    grid-area: trade-side;
+    grid-template: "trade-form" minmax(50%, auto) "trade-assets" 1fr;
+  }
+
+  .orderbook-side-wrapper {
+    grid-area: orderbook-side;
+    grid-template: "orderbook" 50% "trade-list" 50%;
+  }
+
+  .order-wrap {
+    @apply overflow-hidden;
+
+    grid-area: order;
+  }
+
+  .footer-wrap {
+    grid-area: footer;
+    border-top: 1px solid var(--line_color_01);
+    @apply sticky bottom-0 z-10 -mt-px;
+  }
+}
+
+:local(.scoped) {
+  /* 只有一列 1fr 会布局错乱 */
+  grid-template:
+    "header header header header" 60px
+    "announcements announcements announcements announcements" auto
+    "market chart chart  orderbook" minmax(600px, 1fr)
+    "market-change trade-form trade-form orderbook" 50px
+    "market-change trade-form trade-form orderbook" 430px
+    "order order order order" 328px
+    "search-history search-history search-history search-history" 50px/ 310px 1fr 1fr 310px;
+
+  &.left {
+    grid-template: "header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements" auto
+      "trade-form orderbook chart chart" 1fr
+      "market-change order order order" 328px
+      "search-history search-history search-history search-history" 50px/ 310px 310px 1fr 1fr;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+  &.right {
+    grid-template: "header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements" auto
+      "chart chart orderbook trade-form" 1fr
+      "order order order market-change" 328px
+      "search-history search-history search-history search-history" 50px/ 1fr 1fr 310px 310px;
+    height: 100vh !important;
+    max-height: 100vh !important;
+
+  }
+
+
+  @apply bg-line_color_02 grid gap-px relative w-full;
+
+  min-height: 850px;
+
+  /* 不加限制的话会有子组件无限加载内容的问题 */
+
+  max-height: 1500px;
+
+  @apply bg-line_color_02 grid gap-px relative;
+}
+
+:local(.xxlscoped) {
+  /* 只有一列 1fr 会布局错乱 */
+  grid-template:
+    "header header header header header" 60px
+    "announcements announcements announcements announcements announcements" auto
+    "market chart chart  orderbook trade-list" minmax(600px, 1fr)
+    "market-change trade-form trade-form orderbook trade-list" 50px
+    "market-change trade-form trade-form orderbook trade-list" 430px
+    "order order order order order" 360px
+    "search-history search-history search-history search-history search-history" 50px/ 310px 1fr 1fr 310px 310px;
+
+  &.left {
+    grid-template: "header header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements announcements" auto
+      "trade-form orderbook  chart chart  chart" 1fr
+      "market-change order order order order" 328px
+      "search-history search-history search-history search-history search-history" 50px / 310px  310px 1fr 1fr 1fr;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+  &.right {
+    grid-template: "header header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements announcements" auto
+      "chart chart chart  orderbook trade-form" 1fr
+      "order order order order market-change" 328px
+      "search-history search-history search-history search-history search-history" 50px/ 1fr 1fr 1fr 310px 310px;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+
+  @apply bg-line_color_02 grid gap-px relative w-full;
+
+  /* height: 100vh; */
+  min-height: 850px;
+
+  /* 不加限制的话会有子组件无限加载内容的问题 */
+  max-height: 1500px;
+
+  @apply bg-line_color_02 grid gap-px relative;
+}
+
+:local(.xxxlscoped) {
+  /* 只有一列 1fr 会布局错乱 */
+  grid-template:
+    "header header header header header" 60px
+    "announcements announcements announcements announcements announcements" auto
+    "market chart chart  orderbook trade-list" minmax(600px, 1fr)
+    "market-change trade-form trade-form orderbook trade-list" 50px
+    "market-change trade-form trade-form orderbook trade-list" 430px
+    "order order order order order" 400px
+    "search-history search-history search-history search-history search-history" 50px/ 420px 1fr 1fr 420px 420px;
+
+  &.left {
+    grid-template: "header header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements announcements" auto
+      "trade-form orderbook  chart chart  chart" 1fr
+      "market-change order order order order" 328px
+      "search-history search-history search-history search-history search-history" 50px / 420px  420px 1fr 1fr 1fr;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+  &.right {
+    grid-template: "header header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements announcements" auto
+      "chart chart chart  orderbook trade-form" 1fr
+      "order order order order market-change" 328px
+      "search-history search-history search-history search-history search-history" 50px/ 1fr 1fr 1fr 420px 420px;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+
+  @apply bg-line_color_02 grid gap-px relative w-full;
+
+  /* height: 100vh; */
+  min-height: 850px;
+
+  /* 不加限制的话会有子组件无限加载内容的问题 */
+  max-height: 1500px;
+
+  @apply bg-line_color_02 grid gap-px relative;
+}

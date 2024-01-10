@@ -1,0 +1,27 @@
+:local(.blacklist-modal) {
+  .tips-content {
+    @apply text-text_color_01 mt-6;
+
+    .text {
+      line-height: 22px;
+      @apply pb-2;
+    }
+
+    .reason-msg {
+      word-wrap: break-word;
+      @apply text-warning_color;
+    }     
+  }
+
+  .tips-warn {
+    @apply text-left mt-4;
+
+    .arco-checkbox-text {
+      @apply ml-1
+    }
+
+    .no-warn {
+      @apply text-text_color_03 text-xs;
+    }
+  }
+}

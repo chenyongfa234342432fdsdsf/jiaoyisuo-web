@@ -1,0 +1,22 @@
+:local(.futures-base-tag-root) {
+  @apply flex items-center cursor-pointer;
+    
+  .name {
+    @apply text-sm text-text_color_01 font-medium;
+
+    line-height: 22px;
+  }
+
+  img {
+    border-radius: 50%;
+    @apply mr-1;
+  }
+    
+  .next-icon {
+    @apply ml-1 mr-2 mt-0;
+    
+    svg {
+      @apply text-sm;
+    }
+  }
+}

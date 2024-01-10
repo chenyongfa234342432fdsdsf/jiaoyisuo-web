@@ -1,0 +1,11 @@
+:local(.scoped) {
+  @apply inline-flex align-middle items-center;
+
+  .nb-icon {
+    @apply w-full h-full;
+  }
+
+  .svg-icon {
+    fill: currentcolor;
+  }
+}

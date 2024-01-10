@@ -1,0 +1,6 @@
+:local(.scoped) {
+  width: 104px;
+  height: 90px;
+
+  @apply mb-3;
+}

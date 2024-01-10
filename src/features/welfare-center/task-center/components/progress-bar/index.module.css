@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply w-full h-full rounded-2xl bg-bg_sr_color overflow-hidden;
+
+  .progress {
+    @apply h-full rounded-2xl bg-brand_color;
+  }
+}

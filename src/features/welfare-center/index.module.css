@@ -1,0 +1,67 @@
+:local(.scoped) {
+  @apply bg-bg_color;
+
+  .welfare-center-header {
+    height: 200px;
+    @apply w-full bg-card_bg_color_01;
+
+    .welfare-center-header-text {
+      width: 1200px;
+      @apply mx-auto flex justify-between;
+      
+      .welfare-center-left {
+        .welfare-center-left-title {
+          margin-top: 35px;
+          @apply text-text_color_01 text-4xl font-semibold mb-1;
+        }
+
+        .welfare-center-left-subtitle {
+          @apply text-xl font-normal text-text_color_01;
+        }
+
+        .welfare-center-rule {
+          border-radius: 14px;
+          @apply w-fit mt-[13px] px-2 py-1 flex items-center bg-card_bg_color_02 text-text_color_02 cursor-pointer;
+
+          .welfare-center-rule-icon {
+            @apply ml-1 text-xs;
+          }
+        }
+      }
+      
+      img {
+        width: 360px;
+        height: 200px;
+
+        /* @apply h-full; */
+      }
+    }
+  }
+  
+  .welfare-center-select {
+    height: 72px;
+    @apply inline-flex items-center mt-6 mb-8 bg-card_bg_color_01 rounded-2xl;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-top: 1px;
+    }
+
+    .welfare-center-select-item {
+      width: 156px;
+      height: 56px;
+      @apply flex justify-center items-center rounded-lg text-text_color_02 mx-2 cursor-pointer text-base;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        @apply mr-2;
+      }
+    }
+    
+    .welfare-center-select-item-checked {
+      @apply text-text_color_01 bg-card_bg_color_03;
+    }
+  }
+}

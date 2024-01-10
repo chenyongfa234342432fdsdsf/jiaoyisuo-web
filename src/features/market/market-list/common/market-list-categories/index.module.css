@@ -1,0 +1,11 @@
+:local(.scoped) {
+  .horizontal-scroll-bar .bar-wrapper {
+    > div {
+      @apply mr-4;
+    }
+
+    > :last-child {
+      @apply mr-0;
+    }
+  }
+}

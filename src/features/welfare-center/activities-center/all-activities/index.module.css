@@ -1,0 +1,28 @@
+:local(.scoped) {
+  margin-bottom: 88px;
+  @apply mt-8;
+
+  .all-activities-title {
+    font-size: 22px;
+    line-height: 34px; 
+    @apply font-medium text-text_color_01;
+  }
+
+  .list-empty-wrap {
+    @apply mt-4 flex justify-center;
+  }
+
+  .all-activities-list {
+    @apply mt-4 grid grid-cols-4 grid-rows-2 gap-x-8 gap-y-6;
+  }
+
+  .list-pagination {
+    margin-top: 60px;
+    @apply flex justify-end;
+
+    .arco-input {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+:local(.introjs-tooltip-custom-default) {
+  transition: all 0.5s;
+  @apply px-4 pb-4 pt-1.5 bg-card_bg_color_03;
+
+  .introjs-arrow.top-middle {
+    @apply border-b-card_bg_color_03 !important;
+  }
+
+  .introjs-arrow.bottom {
+    @apply border-t-card_bg_color_03 !important;
+  }
+
+  .introjs-tooltiptext {
+    border-radius: 4px;
+    @apply p-0 mb-2.5 h-full w-full bg-card_bg_color_03;
+  }
+
+  /*
+  .introjs-tooltipbuttons,
+  */
+  .introjs-bullets,
+  .introjs-tooltip-title,
+  .introjs-prevbutton, {
+    @apply hidden;
+  }
+
+  .introjs-tooltip-header {
+    min-height: 0;
+  }
+
+  .introjs-button {
+    text-shadow: 1px 1px 0 transparent;
+  }
+
+  .introjs-button:focus {
+    box-shadow: none;
+  }
+
+  .introjs-nextbutton {
+    border: 1px solid transparent;
+    @apply rounded py-1 bg-brand_color text-button_text_02;
+  }
+
+  .introjs-skipbutton {
+    @apply w-3 h-3 text-xl leading-8 font-semibold;
+  }
+
+  .introjs-tooltipbuttons {
+    @apply p-0 border-none !important;
+  }
+}
+
+:local(.introjs-helper-layer-custom-default) {
+  box-shadow: var(--bg_color_02) 0 0 0 5000px !important;
+  @apply bg-transparent;
+}

@@ -1,0 +1,20 @@
+{
+  "code": 200,
+  "isOk": true,
+  "data": {
+    "list": [
+      {
+        "coinId": "6137",
+        "symbol": "USDT",
+        "amount": "4600",
+        "availableAmount": "4600",
+        "appLogo": "https://newbit-s3-saas.s3.ap-southeast-1.amazonaws.com/USDT.png",
+        "lockAmount": "0",
+        "webLogo": "https://newbit-s3-saas.s3.ap-southeast-1.amazonaws.com/USDT.png",
+        "coinName": "USDT"
+      }
+    ],
+    "baseCoin": "USD"
+  },
+  "message": "success"
+}

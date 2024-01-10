@@ -1,0 +1,29 @@
+:local(.scoped) {
+  margin-top: 160px;
+  
+  > :last-child {
+    @apply grid grid-cols-3 grid-rows-2 gap-32 w-full;
+  }
+
+  .cards-title {
+    margin-bottom: 80px;
+    font-size: 40px;
+    @apply font-medium text-center;
+  }
+}
+
+:local(.display-card) {
+  @apply border-none flex flex-col items-center m-auto w-64 h-full text-center;
+
+  svg {
+    @apply aspect-square w-11 h-11 rounded-lg;
+  }
+
+  > :first-child {
+    @apply mb-5 cursor-default;
+  }
+
+  > :last-child {
+    @apply text-left mt-4;
+  }
+}

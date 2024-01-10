@@ -1,0 +1,72 @@
+:local(.scoped) {
+  @apply w-full h-40 flex cursor-pointer;
+
+  .activities-img {
+    width: 250px;
+    @apply h-40;
+
+    img {
+      @apply w-full h-full rounded-lg object-cover;
+    }
+  }
+
+  .activities-content {
+    @apply ml-4 flex-1;
+
+    .activities-title {
+      font-size: 20px;
+      line-height: 30px;
+      @apply font-medium text-text_color_01;
+    }
+
+    .activities-endtime {
+      font-size: 14px;
+      line-height: 22px;
+      @apply text-text_color_03;
+    }
+
+    .activity-status {
+      font-size: 14px;
+      line-height: 22px;
+      @apply w-max my-2 px-1 py-px flex items-center align-text-bottom rounded;
+    }
+
+    .activity-status-start {
+      @apply bg-buy_up_color_special_02 text-buy_up_color;
+    }
+
+    .activity-status-coming {
+      color: #FF6A2A;
+      background-color: rgb(255 106 42 / 10%);
+    }
+
+    .activity-status-end {
+      @apply bg-bg_sr_color text-text_color_02;
+    }
+  }
+
+  &.vertical {
+    @apply h-auto block;
+    
+    .activities-img {
+      width: 276px;
+      height: 176px;
+    }
+
+    .activities-content {
+      @apply ml-0 mt-4;
+
+      .activities-title {
+        @apply h-[100px];
+
+        .activities-title-text {
+          /* stylelint-disable-next-line value-no-vendor-prefix */
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}

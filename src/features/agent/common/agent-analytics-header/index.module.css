@@ -1,0 +1,52 @@
+:local(.header-title) {
+  .title {
+    @apply text-text_color_02 font-medium text-sm flex flex-row items-center;
+
+    line-height: 24px;
+  }
+
+  .all-num {
+    @apply text-text_color_01 font-semibold text-2xl;
+
+    line-height: 36px;
+  }
+
+  .encrypt-icon {
+    font-size: 20px;
+  }
+}
+
+:local(.header-info) {
+  .day-title {
+    @apply text-text_color_02 text-sm font-normal flex flex-row items-center gap-x-1;
+
+    line-height: 22px;
+  }
+
+  .msg-icon {
+    font-size: 12px;
+  }
+
+  .day-nums {
+    @apply font-medium text-xl;
+
+    line-height: 30px;
+  }
+
+}
+
+:local(.header-layout) {
+  @apply bg-card_bg_color_01 rounded mx-auto mt-10 grid grid-cols-3 p-8 gap-y-8;
+}
+
+:local(.header-gains) {
+  >:first-child {
+    @apply col-span-full;
+  }
+}
+
+:local(.header-invite) {
+  >:nth-child(2) {
+    @apply col-span-2;
+  }
+}

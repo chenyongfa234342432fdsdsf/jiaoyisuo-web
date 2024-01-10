@@ -1,0 +1,136 @@
+:local(.scoped) {
+  /* 只有一列 1fr 会布局错乱 */
+  grid-template:"header header header header" minmax(60px, auto)
+    "announcements announcements announcements announcements" auto
+    "market-select-history market-select-history orderbook trade-list" 50px
+    "chart chart orderbook trade-list" 1fr
+    "chart chart trade-form trade-form" auto
+    "order order trade-form trade-form" 328px/ 1fr 1fr 310px 310px;
+
+  &.left {
+    grid-template: "header header header header" minmax(60px, auto)
+      "announcements announcements announcements announcements" auto
+      "trade-side market-select-history market-select-history orderbook-side" 50px
+      "trade-side chart chart orderbook-side" 1fr
+      "trade-side order order orderbook-side" 328px/ 300px 1fr 1fr 310px;
+  }
+
+  &.right {
+    grid-template: "header header header header" minmax(60px, auto)
+      "announcements  announcements announcements announcements" auto
+      "market-select-history market-select-history orderbook-side trade-side" 50px
+      "chart chart orderbook-side trade-side" 1fr
+      "order order orderbook-side trade-side" 328px/ 1fr 1fr 310px 300px;
+  }
+
+
+  @apply bg-line_color_02 grid gap-px relative w-full;
+
+  height: 100vh;
+  min-height: 850px;
+
+  /* 不加限制的话会有子组件无限加载内容的问题 */
+  max-height: 100vh;
+
+  @apply bg-line_color_02 grid gap-px relative;
+
+  @apply bg-line_color_02 grid gap-px relative;
+
+  &> div {
+    @apply bg-bg_color;
+  }
+
+  .header-wrap {
+    grid-area: header;
+  }
+
+  .orderbook-wrap {
+    grid-area: orderbook;
+  }
+
+  .market-select-history-wrap {
+    grid-area: market-select-history;
+    max-width: 100%;
+  }
+
+
+  .chart-wrap {
+    grid-area: chart;
+
+    @apply flex items-center justify-center;
+
+    /* 这些地方用 100% 效果是一样的，不覆盖 js 写在 style 里的值的话会导致从大屏幕变小屏幕后无法自适应 */
+    canvas,
+    .tv-lightweight-charts,
+    table {
+      /** 升级后加上有问题 **/
+
+      /* height: 100% !important; */
+
+      td {
+        height: 100% !important;
+
+        > div {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+
+  .market-detail-wrap {
+    grid-area: market-detail;
+  }
+
+  .trade-assets-wrap {
+    grid-area: trade-assets;
+  }
+
+  .trade-form-wrap {
+    grid-area: trade-form;
+  }
+
+  .trade-list-wrap {
+    grid-area: trade-list;
+  }
+
+  .market-list-wrap {
+    grid-area: market-list;
+
+  }
+
+  .announcements-wrap {
+    grid-area: announcements;
+  }
+
+  .trade-side-wrapper,
+  .orderbook-side-wrapper {
+    /* 不加相对定位会被 k 线遮住 */
+    @apply grid gap-px bg-line_color_02 relative z-10;
+
+    >* {
+      @apply bg-bg_color w-full overflow-hidden;
+    }
+  }
+
+  .trade-side-wrapper {
+    grid-area: trade-side;
+    grid-template: "trade-form" minmax(50%, auto) "trade-assets" 1fr;
+  }
+
+  .orderbook-side-wrapper {
+    grid-area: orderbook-side;
+    grid-template: "orderbook" 50% "trade-list" 50%;
+  }
+
+  .order-wrap {
+    @apply overflow-hidden;
+
+    grid-area: order;
+  }
+
+  .footer-wrap {
+    grid-area: footer;
+    border-top: 1px solid var(--line_color_01);
+    @apply sticky bottom-0 z-10 -mt-px;
+  }
+}

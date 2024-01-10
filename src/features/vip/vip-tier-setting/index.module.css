@@ -1,0 +1,41 @@
+:local(.scoped) {
+  @apply flex flex-col space-y-4;
+
+
+  .settings-col {
+    > * {
+      border-bottom-width: 0.5px;
+    }
+
+    > :last-child {
+      border-bottom-width: 0;
+    }
+  }
+
+  .setting-avatar-upload {
+    margin-top: 64px;
+    @apply text-center mx-auto;
+  }
+}
+
+:local(.vip-tier-setting-cell) {
+  @apply grid grid-cols-10 py-6 items-center border-line_color_02;
+
+
+  .icon-wrap {
+    font-size: 20px;
+  }
+
+  >:first-child {
+    @apply col-span-6;
+  }
+
+  >:nth-child(2) {
+    @apply col-span-3;
+  }
+
+  >:last-child {
+    @apply ml-auto;
+  }
+
+}

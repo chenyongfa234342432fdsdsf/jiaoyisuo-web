@@ -1,0 +1,37 @@
+:local(.scoped) {
+  @apply flex flex-col items-center w-full h-full;
+
+  .spot-chart-wrap {
+    height: calc(100% - 43px);
+    @apply w-full;
+  }
+
+  .futures-chart-wrap {
+    @apply w-full h-full;
+  }
+
+  .char-tab-wrapper {
+    height: 42px;
+
+    /* border-left: 1px solid var(--line_color_02); */
+    @apply w-full flex items-center;
+    
+
+    .chart-tab {
+      /* @apply gap-8 !important; */
+    }
+
+    .chart-tab .active .item {
+      @apply text-xs font-medium text-text_color_01 !important;
+    }
+
+
+    .chart-tab .tab .item {
+      @apply text-xs font-medium text-text_color_02;
+    }
+
+    .chart-tab .item:hover {
+      @apply text-text_color_01;
+    }
+  }
+}

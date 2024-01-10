@@ -1,0 +1,19 @@
+:local(.option-position-list) {
+  @apply h-full;
+
+  .arco-table-body .arco-table-col-fixed-right {
+    @apply bg-bg_color;
+  }
+
+  .arco-table-col-fixed-right-first::after {
+    @apply bottom-0;
+  }
+
+  tbody .arco-table-tr .arco-table-th:last-child {
+    @apply bg-bg_color !important;
+  }
+
+  .arco-spin, .arco-spin-children {
+    height: 100%;
+  }
+}

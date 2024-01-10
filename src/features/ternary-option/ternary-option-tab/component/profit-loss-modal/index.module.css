@@ -1,0 +1,80 @@
+:local(.profit-loss-modal) {
+  width: 620px;
+
+  .arco-modal-content {
+    @apply py-8 px-0;
+
+    .arco-trigger {
+      @apply rounded;
+
+      .arco-popover-content {
+        border: 1px solid transparent;
+        @apply rounded py-2 px-3 text-xs overflow-hidden text-button_text_01 bg-toast_bg_color !important;
+      }
+    }
+
+    .arco-trigger-arrow {
+      @apply bg-toast_bg_color;
+    }
+
+    .profit-loss-modal-content {
+      .content-header {
+        @apply flex items-center justify-between mx-8 mb-8;
+
+        .left-text {
+          @apply text-xl font-medium flex items-center;
+
+          span {
+            @apply pb-px;
+          }
+
+          .left-icon {
+            @apply w-3 h-3 ml-2 mt-0;
+
+            svg {
+              @apply w-full h-full;
+            }
+          }
+        }
+
+        .right-icon {
+          @apply w-5 h-5;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+
+      .content-body {
+        .profit-header {
+          @apply mx-8 py-3 px-4 flex items-center justify-between bg-card_bg_color_01;
+
+          .profit-text {
+            @apply text-sm text-text_color_02;
+          }
+
+          .profit-moneny {
+            @apply text-base font-medium text-text_color_01;
+          }
+
+          .profit-header-right {
+            @apply text-text_color_03;
+          }
+        }
+
+        .profit-echarts {
+          @apply h-60 flex;
+        }
+      }
+    }
+  }
+
+  .arco-modal-close-icon {
+    @apply hidden;
+  }
+
+  .arco-modal-header {
+    @apply hidden;
+  }
+}

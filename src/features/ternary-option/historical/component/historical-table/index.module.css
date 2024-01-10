@@ -1,0 +1,11 @@
+:local(.historical-table-text) {
+  @apply text-xs font-normal text-text_color_01;
+
+  .call {
+    @apply text-buy_up_color;
+  }
+
+  .put {
+    @apply text-sell_down_color;
+  }
+}

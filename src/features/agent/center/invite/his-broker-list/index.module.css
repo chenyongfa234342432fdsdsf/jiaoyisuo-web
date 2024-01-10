@@ -1,0 +1,314 @@
+:local(.scoped) {
+  width: 1200px;
+
+  .hisbroker-from {
+    @apply flex items-center flex-1;
+
+    .arco-select-view {
+      @apply bg-bg_sr_color rounded-lg  border-none !important;
+    }
+
+    .hisbroker-from-span {
+      font-size: 14px;
+      line-height: 22px;
+      @apply not-italic font-medium ml-6 mr-2.5;
+    }
+
+    .arco-input-group-wrapper .arco-input-inner-wrapper {
+      @apply border-none border-transparent;
+    }
+
+    .search-input {
+      width: 214px;
+      height: 40px;
+      @apply h-full bg-bg_sr_color rounded-lg;
+
+      .arco-input-group {
+        @apply rounded-lg;
+      }
+
+      input {
+        &::placeholder {
+          @apply text-text_color_04 text-sm relative;
+
+          top: -1px;
+        }
+      }
+    }
+
+    .hisbroker-select {
+      width: 150px;
+      height: 40px;
+
+      .assets-select-icon {
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+    }
+  }
+
+  .hisbroker-from-box {
+    @apply flex items-center mt-10 mb-6;
+
+    .hisbroker-filter-btn {
+      svg {
+        @apply text-2xl;
+      }
+    }
+  }
+}
+
+:local(.tabel-scoped) {
+  .table-container {
+    @apply mx-auto mt-6;
+
+    width: 1200px;
+
+    /* .arco-table-tr {
+      @apply last:mb-8;
+    } */
+
+    .arco-table-body {
+      @apply pt-3 pb-5 bg-bg_color;
+
+      height: 226px !important;
+
+      tr {
+        td {
+          @apply px-0;
+        }
+      }
+    }
+
+    .arco-table-header {
+      @apply overflow-hidden !important;
+
+      /* padding-right: 8px; */
+    }
+
+    /* .arco-table-col-fixed-right-first {
+      @apply bg-bg_color_03;
+    } */
+
+    .arco-table-td.arco-table-col-fixed-right-first {
+      padding-right: 22px;
+    }
+
+    .arco-table-th.arco-table-col-fixed-right-first {
+      padding-right: 22px;
+    }
+
+    .arco-table-td.arco-table-col-fixed-right-first::after {
+      display: none;
+
+      @apply absolute bg-card_bg_color_01;
+    }
+
+    .arco-table-td.arco-table-col-fixed-left-last::after {
+      @apply absolute bg-card_bg_color_01;
+
+      display: none;
+    }
+
+    .arco-spin-children {
+      max-width: 1200px;
+    }
+
+    .table {
+      &.arco-table table {
+        width: auto;
+        min-width: 1190px;
+      }
+
+      .arco-table-sorter-icon .arco-icon-caret-up {
+        top: 3px !important;
+        font-size: 8px !important;
+      }
+
+      .arco-table-sorter-icon .arco-icon-caret-down {
+        top: -1px !important;
+        font-size: 8px !important;
+      }
+
+      .arco-table-th {
+        @apply text-right bg-card_bg_color_01;
+
+        &:first-child {
+          @apply text-left;
+        }
+
+        border-bottom: none;
+
+        .arco-table-th-item {
+          padding: 0 0 0 20px !important;
+
+          .arco-table-th-item-title {
+            @apply text-text_color_02 text-xs font-normal not-italic;
+          }
+        }
+      }
+
+      .arco-table-td {
+        @apply text-right border-transparent py-3	 border-none !important;
+      }
+
+      .table-ceil {
+        @apply flex justify-end items-center;
+
+        .table-ceil-box {
+          @apply mr-6 flex justify-end;
+
+          .table-ceil-isdefault {
+            @apply bg-brand_color_special_02 text-brand_color px-2 h-6 rounded flex justify-center items-center;
+
+            font-weight: 400;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 18px;
+          }
+
+          .table-ceil-text {
+            @apply text-brand_color cursor-pointer text-sm font-normal not-italic;
+          }
+        }
+
+        .table-ceil-name {
+          margin-left: 22px;
+          @apply text-text_color_01 truncate text-sm font-normal not-italic flex-1 text-left;
+        }
+
+        .table-ceil-text {
+          @apply text-text_color_01 text-sm font-normal not-italic;
+        }
+
+        .table-ceil-icon {
+          @apply ml-2;
+
+          width: 18px;
+          height: 22px;
+        }
+
+        .table-ceil-delete-icon {
+          width: 18px;
+          height: 22px;
+        }
+      }
+
+      .arco-table-col-has-sorter .arco-table-cell-with-sorter {
+        padding: 9px 0 9px 16px !important;
+      }
+    }
+
+    .empty {
+      & svg {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  .table-pagination {
+    @apply flex items-center justify-end mt-20 mb-28;
+
+    .arco-pagination-jumper {
+      @apply inline-flex items-center order-3;
+    }
+
+    .arco-pagination-list {
+      @apply inline-flex order-2;
+    }
+
+    .arco-select {
+      @apply inline-flex order-1;
+    }
+
+    .arco-pagination-item {
+      @apply inline-flex justify-center items-center h-8;
+
+      min-width: 32px;
+    }
+
+    .arco-pagination-option {
+      @apply inline-flex justify-center items-center;
+    }
+
+    .arco-select-view-value {
+      @apply inline-flex items-center;
+    }
+
+    .arco-pagination-jumper-input,
+    .arco-select-view {
+      @apply h-8;
+    }
+
+    .table-pagination-extra {
+      @apply ml-2 text-sm font-normal not-italic;
+
+      color: var(--color-text-3);
+    }
+  }
+}
+
+:local(.tabel-data) {
+  .tabel-right-button {
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    @apply font-normal not-italic text-brand_color;
+  }
+
+  .tabel-box {
+    margin-left: 22px;
+    @apply flex items-center;
+
+    .tabel-name {
+      font-size: 14px;
+      line-height: 22px;
+
+      @apply font-normal text-text_color_01	 not-italic text-center ml-2;
+    }
+
+    .tabel-name-circle {
+      width: 22px;
+      height: 22px;
+
+      @apply bg-brand_color flex items-center justify-center rounded-full p-1;
+    }
+  }
+
+  .tabel-uid-box {
+    @apply flex items-center justify-end;
+
+    & > div:nth-child(1) {
+      margin-right: 5px;
+    }
+  }
+
+  .tabel-box-proportion {
+    @apply flex items-center justify-end;
+
+    & > div:nth-child(1) {
+      svg {
+        @apply mr-2;
+
+        width: 16px;
+        height: 13px;
+      }
+    }
+  }
+
+  .tabel-but-box {
+    @apply flex justify-end;
+
+    & > div:nth-child(2) {
+      @apply ml-4;
+    }
+  }
+}
+
+:local(.icon) {
+  svg {
+    margin-top: -5px;
+  }
+}

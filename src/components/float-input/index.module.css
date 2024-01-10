@@ -1,0 +1,15 @@
+:local(.float-input-wrap) {
+  @apply relative;
+
+  .float-input-item-text {
+    @apply absolute -top-2.5 left-3 z-10 bg-bg_color px-1;
+
+    label {
+      @apply text-xs font-medium text-brand_color;
+    }
+
+    span {
+      @apply text-xs;
+    }
+  }
+}

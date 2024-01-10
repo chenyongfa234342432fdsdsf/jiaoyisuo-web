@@ -1,0 +1,13 @@
+:local(.scoped) {
+  .card-coupon-illustrate {
+    @apply text-text_color_03 text-xs flex items-center;
+    
+    span:first-child {
+      @apply mr-1 mt-0.5;
+    }
+
+    svg {
+      @apply w-3 h-3;
+    }
+  }
+}

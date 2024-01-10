@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply bg-bg_sr_color flex rounded-lg relative;
+
+  .select-text-wrap {
+    @apply absolute text-text_color_02;
+
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  .arco-select-view-value {
+    @apply text-right pr-1;
+  }
+}
